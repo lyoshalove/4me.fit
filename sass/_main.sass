@@ -1,0 +1,534 @@
+.header
+  display: flex
+  justify-content: space-between
+  align-items: center
+  margin: 0 0 65px
+  &__link
+    margin: 0 100px 0 0
+  &__menu
+    display: flex
+    &-item
+      transition: .3s
+      &:not(:last-child)
+        margin: 0 60px 0 0
+    &-link
+      transition: .3s
+      position: relative
+      &::before
+        content: ''
+        position: absolute
+        left: 0
+        top: 100%
+        width: 100%
+        height: 1px
+        background: #7e58f5
+        transform: translate(0, 5px)
+        opacity: 0
+        transition: .3s
+      &:hover
+        color: #7e58f5
+        &::before
+          transform: translate(0, 0)
+          opacity: 1
+
+.hero
+  position: relative
+  padding: 60px 0 0
+  box-shadow: 0 0 50px 0 rgba(134, 220, 255, 0.1)
+  background-image: linear-gradient(to left, #fbcdf5, #e3feff)
+  &__content
+    display: flex
+    z-index: 1
+    position: relative
+  &__left
+    flex: 0 1 54%
+  &__right
+    flex: 0 1 46%
+  &__image
+    transform: translate(-20px, 0)
+    align-self: end
+    &-mobile
+      display: none
+  &__descr
+    color: $thirty
+    font-size: 20px
+    margin: 30px 0 35px
+    max-width: 545px
+  &__prices
+    display: flex
+  &__price
+    display: block
+    font-size: 46px
+    font-weight: 800
+    transform: translate(0, -10px)
+    &-item
+      margin: 0 50px 0 0
+    &-label
+      display: block
+      color: #474747
+      font-size: 16px
+      &_old
+        color: rgba($primary, .4)
+    &-old
+      color: rgba(150, 150, 150, 0.4)
+      text-decoration: line-through
+    &-new
+      color: #7e58f5
+  &__btns
+    display: flex
+    align-items: flex-start
+    flex-wrap: wrap
+    gap: 30px
+    margin: 65px 0 90px
+  &__btn
+    flex: 0 1 calc(50% - 15px)
+    padding: 23px 20px
+    max-width: 320px
+    width: 100%
+  &__users
+    display: flex
+    flex-wrap: wrap
+    gap: 30px
+    &-item
+      flex: 0 1 calc(50% - 15px)
+      display: flex
+      align-items: center
+    &-avatar
+      width: 60px
+      min-width: 60px
+      height: 60px
+      background: $btnColor
+      display: flex
+      justify-content: center
+      align-items: center
+      border-radius: 50%
+      margin: 0 20px 0 0
+    &-label
+      display: block
+      line-height: 1.4
+    &-count
+      display: block
+      line-height: 1.4
+      font-size: 21px
+
+.about
+  padding: 90px 0 100px
+  position: relative
+  &__descr
+    margin: 40px 0
+  &__cards
+    display: flex
+    flex-wrap: wrap
+    column-gap: 40px
+    row-gap: 60px
+    &-mobile
+      display: none
+  &__card
+    flex: 0 1 calc(25% - 30px)
+    min-width: calc(25% - 30px)
+    &-image
+      margin: 0 0 25px
+    &-info
+      font-weight: 600
+  &__btns
+    margin: 30px auto 0
+    display: flex
+    align-items: flex-start
+    gap: 30px
+    max-width: 1020px
+  &__btn
+    padding: 15px 20px
+
+.training
+  position: relative
+  padding: 85px 0 100px
+  box-shadow: 0 0 50px 0 rgba(134, 220, 255, 0.1)
+  background-image: linear-gradient(to left, #fbcdf5, #e3feff)
+  &__descr
+    margin: 40px 0 55px
+  &__cards
+    display: flex
+    flex-wrap: wrap
+    gap: 40px
+    margin: 0 0 60px
+  &__card
+    flex: 0 1 calc(25% - 30px)
+    min-width: calc(25% - 30px)
+    display: flex
+    align-items: center
+    color: $thirty
+    &-number
+      width: 60px
+      height: 60px
+      min-width: 60px
+      background: $btnColor
+      font-weight: 600
+      font-size: 20px
+      line-height: 1.3
+      display: flex
+      justify-content: center
+      align-items: center
+      border-radius: 50%
+      margin: 0 15px 0 0
+    &-action
+      font-size: 20px
+      font-weight: 700
+      line-height: 1.3
+    &-likes
+      font-size: 16px
+      position: relative
+      padding: 0 0 0 23px
+      &::before
+        content: ''
+        position: absolute
+        left: 0
+        top: 5px
+        width: 13px
+        height: 15px
+        background: url('../img/icons/heart.svg') no-repeat center/contain
+  &__btn
+    padding: 20px 60px
+    background: $btnColor
+    color: #db4dc9
+    max-width: 290px
+    span
+      border-bottom: 1px dotted #db4dc9
+    &:hover
+      color: $btnColor
+      background: #db4dc9
+    &-wrapper
+      display: flex
+      justify-content: center
+
+.action
+  position: relative
+  padding: 90px 0
+  color: $secondary
+  &__inner
+    display: flex
+    align-items: center
+  &__left
+    flex: 0 1 calc(56% - 30px)
+    margin: 0 30px 0 0
+  &__right
+    flex: 0 1 44%
+  &__subtitle
+    margin: 25px 0 5px
+    font-size: 20px
+  &__descr
+    margin: 20px 0 0
+    font-size: 19px
+  &__block
+    width: 285px
+    height: 30px
+  &__top
+    border-top: 2px solid #db4dc9
+    border-right: 2px solid #db4dc9
+  &__bottom
+    border-right: 2px solid #ffe6fd
+    border-bottom: 2px solid #ffe6fd
+  &__btns
+    margin: 30px 0 30px 35px
+  &__btn
+    padding: 20px 45px
+    &:not(:last-child)
+      margin: 0 0 20px
+    &-mini
+      font-size: 17px
+      font-weight: 600
+      color: $thirty
+      background: #ffe6fd
+      line-height: 1.2
+      &:hover
+        background: #ffe6fd
+
+.author
+  position: relative
+  padding: 80px 0 0
+  background-image: linear-gradient(to left, #fbcdf5, #e3feff);
+  &__inner
+    position: relative
+    z-index: 1
+    display: flex
+  &__left
+    align-self: end
+    flex: 0 0 calc(50% - 55px)
+    margin: 0 55px 0 0
+  &__right
+    flex: 0 1 50%
+    padding: 0 0 95px
+  &__img
+    &-mobile
+      display: none
+  &__title
+    display: inline-block
+    color: #7e58f5
+    border-bottom: 2px solid #7e58f5
+  &__descr
+    font-size: 20px
+    margin: 10px 0 45px
+    line-height: 1.5
+  &__cards
+    display: flex
+    flex-wrap: wrap
+    column-gap: 60px
+    row-gap: 40px
+    &-mobile
+      display: none
+  &__card
+    flex: 0 1 calc(50%  - 30px)
+    min-width: calc(50%  - 30px)
+    &-img
+      margin: 0 0 25px
+    &-info
+      font-weight: 500
+  &-text
+    font-size: 180px
+
+.reviews
+  padding: 70px 0 80px
+  background-image: linear-gradient(to top, #fbcdf5, #e3feff)
+  &__info
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    margin: 40px 0 120px
+  &__descr
+    max-width: 982px
+    width: 100%
+    margin: 0 50px 0 0
+  &__btn
+    padding: 10px 20px
+    font-size: 16px
+    max-width: none
+    width: auto
+    display: inline-block
+    &-img
+      margin: 0 5px 0 0
+      display: inline-block
+      vertical-align: middle
+  &__dots
+    display: flex
+    justify-content: center
+    li
+      width: 12px
+      height: 12px
+      border-radius: 50%
+      font-size: 0
+      background: #db4dc9
+      margin: 0 5px
+      &.slick-active
+        background: #7e58f5
+  &__slider
+    &-dots
+      display: none
+      margin: 30px 0 0
+    &-item
+      background: #fff
+      padding: 0 30px 30px
+      margin: 0 15px
+      border-radius: 20px
+    &-img
+      transform: translate(0, -50%)
+      margin: 0 auto
+      border-radius: 50%
+      min-width: 158px
+      height: 158px
+    &-content
+      margin: -60px 0 0
+    &-rating
+      display: flex
+      align-items: center
+    &-number
+      font-weight: bold
+      color: #b821aa
+      margin: 0 0 0 10px
+    &-descr
+      margin: 12px 0 20px
+      transition: .5s
+    &-info
+      display: flex
+      align-items: flex-start
+      justify-content: space-between
+    &-name
+      font-weight: bold
+      margin: 0 20px 0 0
+    &-btns
+      display: flex
+      gap: 25px
+    &-btn
+      width: 53px
+      height: 53px
+      border-radius: 50%
+      background: #fff
+      display: flex
+      align-items: center
+      justify-content: center
+      transition: .3s
+      svg
+          line
+            transition: .3s
+      &:hover
+        background: #f4bdee
+        svg
+          line
+            stroke: #fff
+    &-next
+      .reviews__slider-arrow
+        transform: rotate(180deg)
+
+.advantages
+  position: relative
+  padding: 85px 0 100px
+  color: $primary
+  &__title
+    margin: 0 0 30px
+  &__item
+    display: flex
+    align-items: center
+    &:not(:last-child)
+      margin: 0 0 15px
+    &:nth-child(even)
+      .advantages__item-right
+        flex: 0 1 calc(51% - 30px)
+        margin: 0 0 0 30px
+    &:nth-child(odd)
+      .advantages__item-left
+        flex: 0 1 calc(51% - 30px)
+        margin: 0 30px 0 0
+    &-title
+      font-size: 28px
+      color: $primary
+      &_big
+        font-size: 36px
+        margin: 0 auto 35px
+        text-align: center
+        max-width: 410px
+        width: 100%
+    &-descr
+      margin: 15px 0 40px
+      transition: .5s
+    &-btns
+      margin: 0 auto
+      max-width: 495px
+      width: 100%
+  &__btn
+    &:not(:last-child)
+      margin: 0 0 20px
+
+.faq
+  position: relative
+  padding: 70px 0 80px
+  background-image: linear-gradient(to top, #fbcdf5, #e3feff)
+  &__title
+    margin: 0 0 40px
+  &__item
+    padding: 20px 0
+    border-bottom: 1px solid #fff
+    cursor: pointer
+    &.active
+      .faq__item-btn
+        transform: rotate(180deg)
+    &-top
+      display: flex
+      align-items: center
+      justify-content: space-between
+    &-question
+      font-size: 20px
+      line-height: 1.5
+      font-weight: 600
+      margin: 0 25px 0 0
+    &-btn
+      min-width: 34px
+      height: 34px
+      display: flex
+      justify-content: center
+      align-items: center
+      background: $btnColor
+      border-radius: 50%
+      transition: .3s
+    &-text
+      display: none
+      max-width: 88%
+      width: 100%
+      &.active
+        margin: 15px 0 0
+        display: block
+
+.subscribe
+  padding: 70px 0 0
+  color: $secondary
+  &__inner
+    display: flex
+    align-items: flex-start
+  &__img
+    align-self: end
+  &__left
+    flex: 0 1 calc(73% - 50px)
+    margin: 80px 50px 0 0
+    padding: 0 0 60px
+  &__right
+    flex: 0 1 54%
+    align-self: end
+  &__descr
+    margin: 30px 0
+    font-size: 20px
+  &__form
+    &-item
+      &:not(:last-child)
+        margin: 0 0 30px
+    &-input
+      max-width: 600px
+      width: 100%
+      font-size: 20px
+      padding: 15px 0
+      border-bottom: 1px solid #bcbcbc
+      transition: .3s
+      &:focus
+        border-bottom: 1px solid #7e58f5
+      &::placeholder
+        color: inherit
+    &-btn
+      margin: 65px 0 0
+
+.footer
+  padding: 50px 0 75px
+  color: #fff
+  background: #282828
+  &__inner
+    display: flex
+    align-items: flex-start
+  &__left
+    flex: 0 1 calc(50% - 50px)
+    margin: 0 50px 0 0
+  &__right
+    flex: 0 1 50%
+  &__span
+    display: block
+    font-size: 12px
+    margin: 5px 0
+    &-mobile
+      display: none
+  &__menu
+    &-item
+      &:not(:last-child)
+        margin: 0 0 30px
+    &-link
+      transition: .3s
+      position: relative
+      &::before
+        content: ''
+        position: absolute
+        left: 0
+        top: 100%
+        width: 100%
+        height: 1px
+        background: #7e58f5
+        transform: translate(0, 5px)
+        opacity: 0
+        transition: .3s
+      &:hover
+        color: #7e58f5
+        &::before
+          transform: translate(0, 0)
+          opacity: 1

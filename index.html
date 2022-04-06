@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>4me.fit - ДЕЛАЙ НОГИ</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="wrapper">
+    
+    <div class="hero border-bottom">
+      <div class="container">
+        <div class="hero__inner">
+          <header class="header">
+            <a href="index.html" class="header__link">
+              <svg class="header__logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="179" height="61" viewBox="0 0 179 61">
+                <image id="logo" width="179" height="61" xlink:href="data:img/png;base64,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"/>
+              </svg>
+            </a>
+            <nav class="header__nav burger__nav">
+              <ul class="header__menu burger__menu">
+                <li class="header__menu-item"><a href="#" class="header__menu-link">Купить полную версию</a></li>
+                <li class="header__menu-item"><a href="#" class="header__menu-link">Попробовать бесплатно</a></li>
+                <li class="header__menu-item"><a href="#" class="header__menu-link">Личный кабинет</a></li>
+              </ul>
+            </nav>
+            <div class="header__burger burger">
+              <span class="burger__item burger__item-one"></span>
+              <span class="burger__item burger__item-two"></span>
+              <span class="burger__item burger__item-three"></span>
+            </div>
+          </header>
+
+          <div class="hero__content">
+            <div class="hero__left">
+              <h1 class="hero__title">делай ноги</h1>
+              <p class="hero__descr">
+                Программа для тех, кто хочет эффектные, стройные, подтянутые ножки. Добавьте себе женственности и сексуальности!
+              </p>
+              <div class="hero__prices">
+                <div class="hero__price-item">
+                  <span class="hero__price-label hero__price-label_old">Старая цена</span>
+                  <span class="hero__price hero__price-old">1290 руб.</span>
+                </div>
+                <div class="hero__price-item">
+                  <span class="hero__price-label hero__price-label_new"><b>Новая цена</b></span>
+                  <span class="hero__price hero__price-new">990 руб.</span>
+                </div>
+              </div>
+              <img class="hero__image-mobile" src="img/hero/hero-img.png" alt="women">
+              <div class="hero__btns">
+                <a href="#" class="hero__btn btn">Узнать подробнее</a>
+                <a href="#" class="hero__btn btn">Попробовать бесплатно</a>
+              </div>
+              <div class="hero__users">
+                <div class="hero__users-item">
+                  <div class="hero__users-avatar">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="31" height="26" viewBox="0 0 31 26">
+                      <image id="_4243325_users_people_icon_1_" data-name="4243325_users_people_icon (1)" width="31" height="26" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAaCAYAAABPY4eKAAADiElEQVRIiZ2XWWxNURSGv3vdFqGGUDElkraqxJBUlUo0HpqqSBuC0D5URKIErzyYgpgfECSmRx4oURJCCTWEGGOsWQiCmmOuVGUl/5XtZJ9brORmn7PXv9a/z17D3jdSUFCAR1oCxUB/oB64DhwEvvvAAWkOjJRtM+AacAj4HATGPMZjgM1AamD+JTAV2J+A2Ei3At0C8y+AiqBts7S0NPd9LLAHaAVc1CJOA22ADGACcAW44yEukfO2wtgijgOtgUxgInADuBU3iDrGZrRJz/OBXGAxsAAYCCwRvjTkq0ulN1y27BbJz1wgAmwB2sUN3JhPAbYBR4DCEIIixX+gnjtrSy2ml4B+evbJYfmt0CL+iHmuxu0hxia1wF5gUGB+OnABGJfAdofIc33k7TXWhRjbdh0D0oEnwEbFvhcwQwsyfQ7w3mP/WmNKfMKN+WONufhlnojPa3tXAlUa+2k+XTifxHfrkY88XgYzge4BY8NN0vNk4ENA/0HzCBcN6LsAs/Rc5SM/pUaSqhIZ4ei7Ah2Be4q7T2ql7yg8ajIW55NAB+AAcNZHblIOXFZNW9Z+A3YBydJ/CyEmoE+W3RdleYYSsjy4na68AYYAs5VMMcXxKfAV6O3pfHFJlf6r8OlaxG1gDpAPvE1EbvIDWA1kAS2UgPUqMVvMWjUMVyKajwlXL7vmWtAq3675yK0VrgceAJ8UL5OFwEegTLmRr9jm671M+oXCn5T9A/nLTEQeUUu8qYy3pp/kbNV99e/36m4ngGcaizRfIhyyS5KfmfK7wN01l3ydenFEh0KOYlbsYGoUjuU6PJ5rXK75GgdbLPsc+YvI/7rfX6vebm2xUskyGqj2hCMoqSofS9JXf4EvVI3bXWE8sDuqr18hwKwmiK0FL1M3rNPxWKf3ZU6L9km102iML2pfngeckaO+wM8Q42E66+Ol9k4nWmeH9JXuBKdCfER1plsFDLXSyJPioRLGFetad4HBwFHFsEbns3WqRsXSfCwFhgtnFXBOGd4n4POhyPOMvJMmR+nnykfpd4p4kzK3wcE0aucseTYA04TP0m0oBb90iinReqoPB+WqLhk95ChI7EqD9Dn6md0aYEAItjKmG8jYEIc45bMkAbHr1HD7lNHDE4F9t9egZOu9jxpGU9JC+uymgE2RW4eKx8wayb+I2Zm9nRX/RW6GFjv7A/CvYn8WQokBfgEz7s+QkgAiCQAAAABJRU5ErkJggg=="/>
+                    </svg>
+                  </div>
+                  <div class="hero__users-info">
+                    <span class="hero__users-label">Программу используют:</span>
+                    <span class="hero__users-count"><b>1798 пользователей</b></span>
+                  </div>
+                </div>
+                <div class="hero__users-item">
+                  <div class="hero__users-avatar">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="34" height="28" viewBox="0 0 34 28">
+                      <image id="_4042280_dumbell_gym_healthy_life_take_exercise_training_icon" data-name="4042280_dumbell_gym_healthy life_take exercise_training_icon" width="34" height="28" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAcCAYAAAAEN20fAAAC6ElEQVRIic2XSUhVURjHf5oNSpRNkBAVDYskosRNEwgFVhQU2KJVQYuiQHMjtUuKFkElEkEQJBS5yOLlxiSCBqGoQIsGiCDIJitDG2jAIT77n7hc7n3v3NcL+sPjnvudc77vf7/pnJdXVlYGMBVYaIMQ7gFfIuTZYDxQHrHvIfAhXy8rgBpgMXBKz3pgXo5IIF31IRs1sk1BYOF1oEHesefsHJJw6JTujXr+QUHE4g4PhebmLcBb4C5QBdwHbmbL0IVmTEC2N836Uv1OA8PAOhHpBWqB9cByoDgBhxHb5pFJwEHgRIYN1cAyIA+YD2wGLgETgGZ5p0V6jgIbgHceRMz2FSNSB1zz2GBxXSUitZJ9BPZp3A1sB1LAS61t9tBrtussNIXAY48N+QrHkDyBcsWF0jxyW+MfwFgPnch2YVSyBnEM6AcagcsBuZVfhbxTJFm5ZPv1Xi0vOkxUQkciExELQZfGz4EmYIpKO6X9s+TVMBq13sH6xrZsieyUy1GF7FAvCOKkknc0ME7yMVof7EXTge/ZEnEolls75X6HReohn1RRlhcHgDXAWWABcAeYmclAQeA5EDH/GnihbjtDObFESWt4D8xRb7FO2adcOaJQWGt4qgS33+Q4DlYJbcCeGKKtinOL3ov0tZv09ReVzLeAV8BXHRV9AR0d0tEaY8NstxmRdlWBD8xQpXpEjzUieepvYLbbXYvvyqDop9zsMKCv3AWcCx0RPngWWDNiO99zY0/MafwAOA9sTUjkeFjgS2QQeAKsjJhrUs5EYShG3hAWOCJvVJYpJVpKHugPrLVLzWFgWkjHZ4UujFI1QYf+QCN0NipkG3dV9IX1ikPAWuBbmj12Bl0FVotoRowqKSlJQqRbYaqSoTjsBm6omXnBN0eCOAMs1SEWByvvC0mUZkMENbLKNPODSW//2RJ5BMxNMz+cZi6nRHoTXHz+KZGc478hkrR8HSwR7XgPnrJB2N9Inxv8bwC/AFXOl52k3RPSAAAAAElFTkSuQmCC"/>
+                    </svg>
+                  </div>
+                  <div class="hero__users-info">
+                    <span class="hero__users-label">Занимаются сейчас:</span>
+                    <span class="hero__users-count"><b>54 пользователя</b></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hero__right">
+              <img class="hero__image" src="img/hero/hero-img.png" alt="women">
+            </div>
+          </div>
+          <a href="#" class="btn-down">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="18" viewBox="0 0 30 18">
+              <image id="_4781842_arrow_chevron_direction_down_move_icon_копия" data-name="4781842_arrow_chevron_direction_down_move_icon копия" width="30" height="18" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAASCAYAAABM8m7ZAAAA3UlEQVRIibXWIQ7CMBTG8T8L2xVQeDS3ADEFd2EnAPwMeBxX4ASAR+CQJCgOQF7yljRLt/WN9VN9r+37iZqOvpcPwBx4Ay/iZgpMgFsC7IE78ATWEdm1GlcxBV7qRgacgDwCmuvsTOuFwAfnQAqcB8ZznZk6vaPAJVBEwn2oWGWixS4C3oSKReI0h8Rb0To8FN6J+uB/8SC0Ce6LB6NtsBU3oV1wKG5GJeMOGGfAtoavtDajoXAbTh/UAjfhboJRAt7YhxeevgntA1f4xqllbUIl1UegT2Z66WG+DPwAkpBA5FPO5mkAAAAASUVORK5CYII="/>
+            </svg>
+          </a>
+          <div class="hero__text text">
+            делай ноги
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="about">
+      <div class="container">
+        <div class="about__inner">
+          <h2 class="about__title">о программе</h2>
+          <p class="about__descr">
+            Вы научитесь снимать напряжение, ощутите лёгкость, обретете красивую форму ног, повысите свою выносливость, улучшите подвижность суставов и пластичность мышц. Занятия станут любимой привычкой!
+          </p>
+          <div class="about__cards">
+            <div class="about__card">
+              <svg class="about__card-image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48" height="46" viewBox="0 0 48 46">
+                <image id="_2561353_check_circle_icon_копия" data-name="2561353_check_circle_icon копия" width="48" height="46" xlink:href="data:img/png;base64,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"/>
+              </svg>
+              <div class="about__card-info">Вы сбросите лишний вес благодаря жиросжигающим упражнениям</div>
+            </div>
+            <div class="about__card">
+              <svg class="about__card-image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48" height="46" viewBox="0 0 48 46">
+                <image id="_2561353_check_circle_icon_копия" data-name="2561353_check_circle_icon копия" width="48" height="46" xlink:href="data:img/png;base64,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"/>
+              </svg>
+              <div class="about__card-info">Повысите уровень серотонина и эндорфина благодаря упражнениям</div>
+            </div>
+            <div class="about__card">
+              <svg class="about__card-image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48" height="46" viewBox="0 0 48 46">
+                <image id="_2561353_check_circle_icon_копия" data-name="2561353_check_circle_icon копия" width="48" height="46" xlink:href="data:img/png;base64,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"/>
+              </svg>
+              <div class="about__card-info">Не допустите растяжек на коже в связи с мышечным ростом</div>
+            </div>
+            <div class="about__card">
+              <svg class="about__card-image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48" height="46" viewBox="0 0 48 46">
+                <image id="_2561353_check_circle_icon_копия" data-name="2561353_check_circle_icon копия" width="48" height="46" xlink:href="data:img/png;base64,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"/>
+              </svg>
+              <div class="about__card-info">Подчеркнёте рельеф вашего тела</div>
+            </div>
+            <div class="about__card">
+              <svg class="about__card-image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48" height="46" viewBox="0 0 48 46">
+                <image id="_2561353_check_circle_icon_копия" data-name="2561353_check_circle_icon копия" width="48" height="46" xlink:href="data:img/png;base64,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"/>
+              </svg>
+              <div class="about__card-info">Выведете лишнюю жидкость из организма</div>
+            </div>
+            <div class="about__card">
+              <svg class="about__card-image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48" height="46" viewBox="0 0 48 46">
+                <image id="_2561353_check_circle_icon_копия" data-name="2561353_check_circle_icon копия" width="48" height="46" xlink:href="data:img/png;base64,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"/>
+              </svg>
+              <div class="about__card-info">Разгоните ваш метаболизм</div>
+            </div>
+            <div class="about__card">
+              <svg class="about__card-image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48" height="46" viewBox="0 0 48 46">
+                <image id="_2561353_check_circle_icon_копия" data-name="2561353_check_circle_icon копия" width="48" height="46" xlink:href="data:img/png;base64,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"/>
+              </svg>
+              <div class="about__card-info">Выведете лишнюю жидкость из организма</div>
+            </div>
+            <div class="about__card">
+              <svg class="about__card-image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48" height="46" viewBox="0 0 48 46">
+                <image id="_2561353_check_circle_icon_копия" data-name="2561353_check_circle_icon копия" width="48" height="46" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAuCAYAAABu3ppsAAAKdElEQVRogYVaTaidVxVd6/KSlmBikAxEEpM2pCatNHamPoNYUEyh0YEVzTURWicdigHBCFJRtHXiQNGJGbyU19CR1JIKoTpIIg6FxiZNGktJRYWC0VZNJPcsOT97n32++8AvvHfvO985Z/+t/XP2CW8kIT/MH1L7RH0E/zu+79+ZP7cw6RCEVQr3Q9jHhO0Q3ss8J+EflP4O4RoTXoVwgfXnP3VfAcn2an+3T+fFaCLywPq9CJAH8q88aJMSXDBjOAiyQuFzEI4x4RFCm8r8/C4BM/XvlaGRQSbchvBrJp2icJbAnT53VJqN9Z8mAFkFrwIIhXUZ05ww7BttpvA4pG9R3EWzXgpCpk7YlZAw0arABY3u6xQOIemvnekRDYzMg5+HdBLCOxS+6QJkG7gVUhUowokJD1P4iaQDUaiZazoQSRPImQBJU4WUn1nSdyF8x2GxgeaLghPmlNYAzCpfvL5SPkz7ZMd/GS2rN0P4Icivq1mKPoOoY8ozXyPwOwCXAbwF6N0yU9oKYieFAyBXIe2L+1ds87+BcHM/NjoyenMSa1lnxoOkXSu+mfFLc5jyawfAF0B9DGkkkN9LeG0GnAK43phemlP2TWV2JUF8kMBRCF8FsF/ARQA/pwlk65yh8ntOYS0by+ZVAXWqQIjNcSU26BQs7wRwjtJ+c8Buev2JwkkmPF/Ya1GEDSaO5dTIpxi9bP88X3dRuO1RyP1JDjkIcwJryJo3qJdPrEM4Pmu8N0A0QcAdIM4R2J9hZXoglLf8PsEHAJ4pYqquZJNQ6BhTi3100JlSjRZum/dl6Spj3Yoi52DVfISdGvMAFivDvtUwmyD9spm3Ro465SbALxB6WcEP+toqRBzvvlWxAw2YrnM8vncItSVV8868E8twPS4gxzF72ZyTZfkPSKwysCHgzwAOCXq5WSJwuIEwUtjVB6uWGZQ1jRn9maMwr1l8VTSPqnkbmMXVkj4F4BvGYhu9SfKzAi4tUVJz/iGJuNDo4Juui3MGM1aHDcxnGu3VOgvzXESczsKmmwj8dLRW0eUXIVziqIkar6kwgAHtMaZwsqH5St/PNyjMF8VmxpuCGDXfrGhizZwC8QTAA57QKjPPkDgn9CrDH2IDDCnoPGSgMUpHZ2zvy+hc6A5bmGSReF2ZeVbYqAjWtVTDqJCd+RqEPTUbl/1zqHwAwq2xyMKkRNCY+pOVDOw1la9nzrqTudVhkbDGHOdTz8BMWfM6TmGBtt7R2vgxCD0KYA+M+fqcFHCrmGyaoGwXRg033XaN9rG4LAKtrp2rlQcayGMdrLCJUS66WiZT8wBLWAI6VF4H8LzxOQa+caIXcWbeEBrVICQvDNTH655zFOY5G6IbeqiMSlNXvw9nAbZAOOy6qe9/AVjxEPUWBPFk1ZmtmA0FgE3tKSA+LVRW5sPjDhs1bglzGpmzAB8HcNcQYcDngqr9UxPWVNXr0XTkr2FL5ryqwlbbO2x62VY4aKFSC99jiL7qCbEtyQKsTrSa4fMm/u/jsWkfhW1ePQ4RR604HHxhDmENzLQrF6q+FGCzAWSrBF45GEyzAPczmATkBRHR1ZaehvTNBH9L4irAvyFXmAHpjmeNcV6qScqqzuozLLXNgHnHuvPxIwD/EvEXEJ8xj8kC7B0hoKsjGPqbEWb6NKBPNjJ3gzoNaa4J+ZAv5gLX6Jr3SNIwr0Wo8yOd/HkA0ImiNOH9FH9s2MwC7PCoWIvCt3rNvayPYJt3BswrOyPWKMwtrIYKoyQpQrPoP1bbGGx6Qh8DMIEPOVUWvj5gysxEtxX3ZMvz5DtR9+ZkMfE2e5ynSlnbDyHETCwV5Nwn0mobtsLMrKkx2gRFsYXkjSFME6K8X/EANZQ1MfJ3koxQqkH+eFtxtMtQzqtrgaJHG1k7hCqY54D5TkOWCyf5MzzJXmcBssbfF9jfGiHkkcXSv/t6ifwLqtQpGUJHm+ryr1mFTJk86+zVkrisARdVIHmi4AS2QYKtaI2SBqp/Gubz5m9beG2W2GkOMlSRAaMBBvlXZuR4TUDRSzirodLyRKnO1mnlwVJmU1iNweOEcrxtFUpR0NtoR8tZjfsxWXG/pluM+cSzSADaIhddaD5hprIoVBO0SmFWHDY7qSc1izrN0zzxeUxCOdqGAhfgNeMuC3CZ3okoX1YZMh08rMmLNEUL9KkL1JpqffD2ytB68RdhYbWT2gtZl43y2mlatKklW7kZdMVoZAEu1GzoWNkraE80AW2hRiO78eluv8gQofBsmPZsrSq1iErxCsu2HcBf+VERNFfJ2Ou06rwLJmwW4GLuDrjhKpGjkUmhm3lgPJxZwuRc/h4D9CCFBwEcK/V8KyetAxLVa3/EREkbUYtwBhBkXnEx5oFbIl705bW/80Ru4EaNjF4xqkzqZu/VKV8R8crSfPY9e7GmDRMnqJV2Uqwrath6MR+y1Hi1EHfaz6o1v98L4rHlg8ikqIg8tC+cQAEOL/dm2BnBc8OQd9u2laHHANw7Fug8HcOjHykFXaG4F35IwZuQ7qfwbz/OTY6PbI1gbNBVHo6bqR+34lHSG8GoY2NHWvmc8iqF3b13hOtM2I/cjkddaxa4kw/wlrAaLnYTeKpDaDwLeNqJDhCZREDHUtzSUsryMNCT1VMUd4ctMm/PVOabMe1Q3wZWJP2B4gOG56aNRyC8tHxDEzQYDvEIPdHZghgO/Uv3BBjvE7oVD0M8O2nF/5HSR6SibOcv9IV0B+CTDCBu384AOjg4bdBYKMMHfdLOAdFC9FQS6qvwso4frDSnbo0nlZHC0V+6AKWE1XmAT49bYhvBcwAPLtVXoh8TxyaW9Xw2iF3qjm8N4fBk5jOtbUCfIyDzdD6eI8rKzPON1Iu0BoEVgL+hysVdN38uoBK+ROklhquksmGaQAoGLfbWeusl9Vb7xPlTbizoDBO2TYJCLtsfhkHH7ikULKBgUoB3KB0BajuxhdU8YRugs/loJ3BLxIImZYWNOQRorfaxTG8K2CIoHxcz5pvmfXXuxx4xx40BxGj3Nl7EK3GTwGEVIXrfvr0+Ua+R9BUQK+hm7rEqnn4iYe9Plv1WSsYWLhM8sZzSM/PZmXFTYSNrwNshK1zyxaRIM/F2Si+UW8RQDdo1KpPegHCKwHNIuh7biRFmZvpmhL1M+jISH58J91g8D9Em/2TYHEHSTSJEPQxz6t52T+wChIvvtjDfCX9P+UpTG1wVdey/QZW66iqFG0y42ca3E9iFpPsorEK4p4fe4DtZaVXIpyF8G0l3ukIbuB3/dJyGi+4uVQ8bihr/BKSfUfhwdboGGrtjM6dOGmP6JOtGGtbIbftfovAkpAvTzO5/R4EaamaubndYucPB/bf8uwDgIQBfA3C9hF31mLbxgSfWPZjEfQ+n19ueDzUawd8m2bqlZEo9O4//1cDLwOUwN4a+nLUPU6VUfpQJdzuc0qi9Xgsh1E26RfFXUO4llSx/Z7gMt0RYvhsvkzLFeLJSovffNyrOxv+IEQmhMv/RCjHunyXdB2kHxfc0R36XKufuq0y6Uv+zh35Pv3cYYZYFzWeP3J/p/mEZMOSc/AD4H3pjEfoKC6mDAAAAAElFTkSuQmCC"/>
+              </svg>
+              <div class="about__card-info">Выведете лишнюю жидкость из организма</div>
+            </div>
+          </div>
+          <div class="about__cards-mobile">
+            <div class="about__card">
+              <svg class="about__card-image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48" height="46" viewBox="0 0 48 46">
+                <image id="_2561353_check_circle_icon_копия" data-name="2561353_check_circle_icon копия" width="48" height="46" xlink:href="data:img/png;base64,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"/>
+              </svg>
+              <div class="about__card-info">Вы сбросите лишний вес благодаря жиросжигающим упражнениям</div>
+            </div>
+            <div class="about__card">
+              <svg class="about__card-image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48" height="46" viewBox="0 0 48 46">
+                <image id="_2561353_check_circle_icon_копия" data-name="2561353_check_circle_icon копия" width="48" height="46" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAuCAYAAABu3ppsAAAKdElEQVRogYVaTaidVxVd6/KSlmBikAxEEpM2pCatNHamPoNYUEyh0YEVzTURWicdigHBCFJRtHXiQNGJGbyU19CR1JIKoTpIIg6FxiZNGktJRYWC0VZNJPcsOT97n32++8AvvHfvO985Z/+t/XP2CW8kIT/MH1L7RH0E/zu+79+ZP7cw6RCEVQr3Q9jHhO0Q3ss8J+EflP4O4RoTXoVwgfXnP3VfAcn2an+3T+fFaCLywPq9CJAH8q88aJMSXDBjOAiyQuFzEI4x4RFCm8r8/C4BM/XvlaGRQSbchvBrJp2icJbAnT53VJqN9Z8mAFkFrwIIhXUZ05ww7BttpvA4pG9R3EWzXgpCpk7YlZAw0arABY3u6xQOIemvnekRDYzMg5+HdBLCOxS+6QJkG7gVUhUowokJD1P4iaQDUaiZazoQSRPImQBJU4WUn1nSdyF8x2GxgeaLghPmlNYAzCpfvL5SPkz7ZMd/GS2rN0P4Icivq1mKPoOoY8ozXyPwOwCXAbwF6N0yU9oKYieFAyBXIe2L+1ds87+BcHM/NjoyenMSa1lnxoOkXSu+mfFLc5jyawfAF0B9DGkkkN9LeG0GnAK43phemlP2TWV2JUF8kMBRCF8FsF/ARQA/pwlk65yh8ntOYS0by+ZVAXWqQIjNcSU26BQs7wRwjtJ+c8Buev2JwkkmPF/Ya1GEDSaO5dTIpxi9bP88X3dRuO1RyP1JDjkIcwJryJo3qJdPrEM4Pmu8N0A0QcAdIM4R2J9hZXoglLf8PsEHAJ4pYqquZJNQ6BhTi3100JlSjRZum/dl6Spj3Yoi52DVfISdGvMAFivDvtUwmyD9spm3Ro465SbALxB6WcEP+toqRBzvvlWxAw2YrnM8vncItSVV8868E8twPS4gxzF72ZyTZfkPSKwysCHgzwAOCXq5WSJwuIEwUtjVB6uWGZQ1jRn9maMwr1l8VTSPqnkbmMXVkj4F4BvGYhu9SfKzAi4tUVJz/iGJuNDo4Juui3MGM1aHDcxnGu3VOgvzXESczsKmmwj8dLRW0eUXIVziqIkar6kwgAHtMaZwsqH5St/PNyjMF8VmxpuCGDXfrGhizZwC8QTAA57QKjPPkDgn9CrDH2IDDCnoPGSgMUpHZ2zvy+hc6A5bmGSReF2ZeVbYqAjWtVTDqJCd+RqEPTUbl/1zqHwAwq2xyMKkRNCY+pOVDOw1la9nzrqTudVhkbDGHOdTz8BMWfM6TmGBtt7R2vgxCD0KYA+M+fqcFHCrmGyaoGwXRg033XaN9rG4LAKtrp2rlQcayGMdrLCJUS66WiZT8wBLWAI6VF4H8LzxOQa+caIXcWbeEBrVICQvDNTH655zFOY5G6IbeqiMSlNXvw9nAbZAOOy6qe9/AVjxEPUWBPFk1ZmtmA0FgE3tKSA+LVRW5sPjDhs1bglzGpmzAB8HcNcQYcDngqr9UxPWVNXr0XTkr2FL5ryqwlbbO2x62VY4aKFSC99jiL7qCbEtyQKsTrSa4fMm/u/jsWkfhW1ePQ4RR604HHxhDmENzLQrF6q+FGCzAWSrBF45GEyzAPczmATkBRHR1ZaehvTNBH9L4irAvyFXmAHpjmeNcV6qScqqzuozLLXNgHnHuvPxIwD/EvEXEJ8xj8kC7B0hoKsjGPqbEWb6NKBPNjJ3gzoNaa4J+ZAv5gLX6Jr3SNIwr0Wo8yOd/HkA0ImiNOH9FH9s2MwC7PCoWIvCt3rNvayPYJt3BswrOyPWKMwtrIYKoyQpQrPoP1bbGGx6Qh8DMIEPOVUWvj5gysxEtxX3ZMvz5DtR9+ZkMfE2e5ynSlnbDyHETCwV5Nwn0mobtsLMrKkx2gRFsYXkjSFME6K8X/EANZQ1MfJ3koxQqkH+eFtxtMtQzqtrgaJHG1k7hCqY54D5TkOWCyf5MzzJXmcBssbfF9jfGiHkkcXSv/t6ifwLqtQpGUJHm+ryr1mFTJk86+zVkrisARdVIHmi4AS2QYKtaI2SBqp/Gubz5m9beG2W2GkOMlSRAaMBBvlXZuR4TUDRSzirodLyRKnO1mnlwVJmU1iNweOEcrxtFUpR0NtoR8tZjfsxWXG/pluM+cSzSADaIhddaD5hprIoVBO0SmFWHDY7qSc1izrN0zzxeUxCOdqGAhfgNeMuC3CZ3okoX1YZMh08rMmLNEUL9KkL1JpqffD2ytB68RdhYbWT2gtZl43y2mlatKklW7kZdMVoZAEu1GzoWNkraE80AW2hRiO78eluv8gQofBsmPZsrSq1iErxCsu2HcBf+VERNFfJ2Ou06rwLJmwW4GLuDrjhKpGjkUmhm3lgPJxZwuRc/h4D9CCFBwEcK/V8KyetAxLVa3/EREkbUYtwBhBkXnEx5oFbIl705bW/80Ru4EaNjF4xqkzqZu/VKV8R8crSfPY9e7GmDRMnqJV2Uqwrath6MR+y1Hi1EHfaz6o1v98L4rHlg8ikqIg8tC+cQAEOL/dm2BnBc8OQd9u2laHHANw7Fug8HcOjHykFXaG4F35IwZuQ7qfwbz/OTY6PbI1gbNBVHo6bqR+34lHSG8GoY2NHWvmc8iqF3b13hOtM2I/cjkddaxa4kw/wlrAaLnYTeKpDaDwLeNqJDhCZREDHUtzSUsryMNCT1VMUd4ctMm/PVOabMe1Q3wZWJP2B4gOG56aNRyC8tHxDEzQYDvEIPdHZghgO/Uv3BBjvE7oVD0M8O2nF/5HSR6SibOcv9IV0B+CTDCBu384AOjg4bdBYKMMHfdLOAdFC9FQS6qvwso4frDSnbo0nlZHC0V+6AKWE1XmAT49bYhvBcwAPLtVXoh8TxyaW9Xw2iF3qjm8N4fBk5jOtbUCfIyDzdD6eI8rKzPON1Iu0BoEVgL+hysVdN38uoBK+ROklhquksmGaQAoGLfbWeusl9Vb7xPlTbizoDBO2TYJCLtsfhkHH7ikULKBgUoB3KB0BajuxhdU8YRugs/loJ3BLxIImZYWNOQRorfaxTG8K2CIoHxcz5pvmfXXuxx4xx40BxGj3Nl7EK3GTwGEVIXrfvr0+Ua+R9BUQK+hm7rEqnn4iYe9Plv1WSsYWLhM8sZzSM/PZmXFTYSNrwNshK1zyxaRIM/F2Si+UW8RQDdo1KpPegHCKwHNIuh7biRFmZvpmhL1M+jISH58J91g8D9Em/2TYHEHSTSJEPQxz6t52T+wChIvvtjDfCX9P+UpTG1wVdey/QZW66iqFG0y42ca3E9iFpPsorEK4p4fe4DtZaVXIpyF8G0l3ukIbuB3/dJyGi+4uVQ8bihr/BKSfUfhwdboGGrtjM6dOGmP6JOtGGtbIbftfovAkpAvTzO5/R4EaamaubndYucPB/bf8uwDgIQBfA3C9hF31mLbxgSfWPZjEfQ+n19ueDzUawd8m2bqlZEo9O4//1cDLwOUwN4a+nLUPU6VUfpQJdzuc0qi9Xgsh1E26RfFXUO4llSx/Z7gMt0RYvhsvkzLFeLJSovffNyrOxv+IEQmhMv/RCjHunyXdB2kHxfc0R36XKufuq0y6Uv+zh35Pv3cYYZYFzWeP3J/p/mEZMOSc/AD4H3pjEfoKC6mDAAAAAElFTkSuQmCC"/>
+              </svg>
+              <div class="about__card-info">Повысите уровень серотонина и эндорфина благодаря упражнениям</div>
+            </div>
+            <div class="about__card">
+              <svg class="about__card-image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48" height="46" viewBox="0 0 48 46">
+                <image id="_2561353_check_circle_icon_копия" data-name="2561353_check_circle_icon копия" width="48" height="46" xlink:href="data:img/png;base64,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"/>
+              </svg>
+              <div class="about__card-info">Не допустите растяжек на коже в связи с мышечным ростом</div>
+            </div>
+            <div class="about__card">
+              <svg class="about__card-image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48" height="46" viewBox="0 0 48 46">
+                <image id="_2561353_check_circle_icon_копия" data-name="2561353_check_circle_icon копия" width="48" height="46" xlink:href="data:img/png;base64,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"/>
+              </svg>
+              <div class="about__card-info">Подчеркнёте рельеф вашего тела</div>
+            </div>
+          </div>
+          <div class="about__btns">
+            <a href="#" class="about__btn btn btn-pink">
+              <svg class="about__btn-bag btn__bag" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="26" viewBox="0 0 20 26">
+                <image id="_2849808_shop_package_multimedia_icon" data-name="2849808_shop_package_multimedia_icon" width="20" height="26" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAaCAYAAAC3g3x9AAABBklEQVRIie2Tv2oCQRDGfwbRICJXSAJWvkGCve8gGALWadLmz9skfao8gpUPELXwGRQbicFCMF9YmYTNsXc5wpb3wcDufDu/mxk4JOXFtaSxpLWFO1/l1WQZFUlPytazvSkMvDXUXtKDpLakM0mPlpO9KQxcWNFdwLs3b1EUWPcG7QT8jufX034VuLT4VsM7D4Adv+X7Nyl/6ha7BM6Jo5Xr8NRQr8AHUANGlnsB9qlPhfwmMDyyJG1sH13bQ+LtKAnsMOR37b45iTTqj6qB3DvwBlSAbcB3uTlwsLd/Aj+BXk4TDnSRZUYfuQSWwBJYRP6/3AKSf3Jc7VE+cBarwwnQjwEDJl+/a6NfFGDPiwAAAABJRU5ErkJggg=="/>
+              </svg>
+              Купить полную версию за 990&nbsp;р.
+            </a>
+            <a href="#" class="about__btn btn">Купить в подарок другу</a>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn-down">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="18" viewBox="0 0 30 18">
+          <image id="_4781842_arrow_chevron_direction_down_move_icon_копия" data-name="4781842_arrow_chevron_direction_down_move_icon копия" width="30" height="18" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAASCAYAAABM8m7ZAAAA3UlEQVRIibXWIQ7CMBTG8T8L2xVQeDS3ADEFd2EnAPwMeBxX4ASAR+CQJCgOQF7yljRLt/WN9VN9r+37iZqOvpcPwBx4Ay/iZgpMgFsC7IE78ATWEdm1GlcxBV7qRgacgDwCmuvsTOuFwAfnQAqcB8ZznZk6vaPAJVBEwn2oWGWixS4C3oSKReI0h8Rb0To8FN6J+uB/8SC0Ce6LB6NtsBU3oV1wKG5GJeMOGGfAtoavtDajoXAbTh/UAjfhboJRAt7YhxeevgntA1f4xqllbUIl1UegT2Z66WG+DPwAkpBA5FPO5mkAAAAASUVORK5CYII="/>
+        </svg>
+      </a>
+    </section>
+
+    <section class="training border-bottom">
+      <div class="container">
+        <div class="training__inner">
+          <h2 class="training__title">тренировки в программе <span>делай ноги</span></h2>
+          <p class="training__descr">
+            С каждой новой тренировкой нагрузка будет пропорционально увеличиваться. Это поможет вам комфортно войти в темп и достичь максимального результата.
+          </p>
+          <div class="training__cards">
+            <div class="training__card">
+              <div class="training__card-number">1</div>
+              <div class="training__card-info">
+                <div class="training__card-action">Вступительная</div>
+                <div class="training__card-likes">369 людей оценили</div>
+              </div>
+            </div>
+            <div class="training__card">
+              <div class="training__card-number">2</div>
+              <div class="training__card-info">
+                <div class="training__card-action">Идём дальше</div>
+                <div class="training__card-likes">369 людей оценили</div>
+              </div>
+            </div>
+            <div class="training__card">
+              <div class="training__card-number">3</div>
+              <div class="training__card-info">
+                <div class="training__card-action">Задаём темп</div>
+                <div class="training__card-likes">369 людей оценили</div>
+              </div>
+            </div>
+            <div class="training__card">
+              <div class="training__card-number">4</div>
+              <div class="training__card-info">
+                <div class="training__card-action">Держим темп</div>
+                <div class="training__card-likes">369 людей оценили</div>
+              </div>
+            </div>
+            <div class="training__card">
+              <div class="training__card-number">5</div>
+              <div class="training__card-info">
+                <div class="training__card-action">Развиваем</div>
+                <div class="training__card-likes">369 людей оценили</div>
+              </div>
+            </div>
+            <div class="training__card">
+              <div class="training__card-number">6</div>
+              <div class="training__card-info">
+                <div class="training__card-action">Стройнеем</div>
+                <div class="training__card-likes">369 людей оценили</div>
+              </div>
+            </div>
+            <div class="training__card">
+              <div class="training__card-number">7</div>
+              <div class="training__card-info">
+                <div class="training__card-action">Усиленная</div>
+                <div class="training__card-likes">369 людей оценили</div>
+              </div>
+            </div>
+            <div class="training__card">
+              <div class="training__card-number">8</div>
+              <div class="training__card-info">
+                <div class="training__card-action">Нарабатываем</div>
+                <div class="training__card-likes">369 людей оценили</div>
+              </div>
+            </div>
+            <div class="training__card">
+              <div class="training__card-number">9</div>
+              <div class="training__card-info">
+                <div class="training__card-action">Продолжаем</div>
+                <div class="training__card-likes">369 людей оценили</div>
+              </div>
+            </div>
+            <div class="training__card">
+              <div class="training__card-number">10</div>
+              <div class="training__card-info">
+                <div class="training__card-action">Улучшаем</div>
+                <div class="training__card-likes">369 людей оценили</div>
+              </div>
+            </div>
+            <div class="training__card">
+              <div class="training__card-number">11</div>
+              <div class="training__card-info">
+                <div class="training__card-action">Еще держим</div>
+                <div class="training__card-likes">369 людей оценили</div>
+              </div>
+            </div>
+            <div class="training__card">
+              <div class="training__card-number">12</div>
+              <div class="training__card-info">
+                <div class="training__card-action">На пути к красоте</div>
+                <div class="training__card-likes">369 людей оценили</div>
+              </div>
+            </div>
+            <div class="training__card">
+              <div class="training__card-number">13</div>
+              <div class="training__card-info">
+                <div class="training__card-action">Улучшаем</div>
+                <div class="training__card-likes">369 людей оценили</div>
+              </div>
+            </div>
+            <div class="training__card">
+              <div class="training__card-number">14</div>
+              <div class="training__card-info">
+                <div class="training__card-action">Улучшаем</div>
+                <div class="training__card-likes">369 людей оценили</div>
+              </div>
+            </div>
+            <div class="training__card">
+              <div class="training__card-number">15</div>
+              <div class="training__card-info">
+                <div class="training__card-action">Улучшаем</div>
+                <div class="training__card-likes">369 людей оценили</div>
+              </div>
+            </div>
+            <div class="training__card">
+              <div class="training__card-number">16</div>
+              <div class="training__card-info">
+                <div class="training__card-action">Улучшаем</div>
+                <div class="training__card-likes">369 людей оценили</div>
+              </div>
+            </div>
+          </div>
+          <div class="training__btn-wrapper">
+            <a href="#" class="training__btn btn"><span>Показать больше</span></a>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn-down">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="18" viewBox="0 0 30 18">
+          <image id="_4781842_arrow_chevron_direction_down_move_icon_копия" data-name="4781842_arrow_chevron_direction_down_move_icon копия" width="30" height="18" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAASCAYAAABM8m7ZAAAA3UlEQVRIibXWIQ7CMBTG8T8L2xVQeDS3ADEFd2EnAPwMeBxX4ASAR+CQJCgOQF7yljRLt/WN9VN9r+37iZqOvpcPwBx4Ay/iZgpMgFsC7IE78ATWEdm1GlcxBV7qRgacgDwCmuvsTOuFwAfnQAqcB8ZznZk6vaPAJVBEwn2oWGWixS4C3oSKReI0h8Rb0To8FN6J+uB/8SC0Ce6LB6NtsBU3oV1wKG5GJeMOGGfAtoavtDajoXAbTh/UAjfhboJRAt7YhxeevgntA1f4xqllbUIl1UegT2Z66WG+DPwAkpBA5FPO5mkAAAAASUVORK5CYII="/>
+        </svg>
+      </a>
+    </section>
+
+    <section class="action">
+      <div class="container">
+        <div class="action__inner">
+          <div class="action__left">
+            <h2 class="action__title">начните тренироваться сейчас, или в любое время</h2>
+            <div class="action__subtitle">Программа тренировок</div>
+            <h3 class="action__title">делай ноги</h3>
+            <p class="action__descr">Программа для тех, кто хочет эффектные, стройные, подтянутые ножки. Добавьте себе женственности и сексуальности!</p>
+          </div>
+          <div class="action__right">
+            <div class="action__block action__top"></div>
+            <div class="action__btns">
+              <a href="#" class="action__btn btn btn-pink">
+                <svg class="action__btn-bag btn__bag" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="26" viewBox="0 0 20 26">
+                  <image id="_2849808_shop_package_multimedia_icon" data-name="2849808_shop_package_multimedia_icon" width="20" height="26" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAaCAYAAAC3g3x9AAABBklEQVRIie2Tv2oCQRDGfwbRICJXSAJWvkGCve8gGALWadLmz9skfao8gpUPELXwGRQbicFCMF9YmYTNsXc5wpb3wcDufDu/mxk4JOXFtaSxpLWFO1/l1WQZFUlPytazvSkMvDXUXtKDpLakM0mPlpO9KQxcWNFdwLs3b1EUWPcG7QT8jufX034VuLT4VsM7D4Adv+X7Nyl/6ha7BM6Jo5Xr8NRQr8AHUANGlnsB9qlPhfwmMDyyJG1sH13bQ+LtKAnsMOR37b45iTTqj6qB3DvwBlSAbcB3uTlwsLd/Aj+BXk4TDnSRZUYfuQSWwBJYRP6/3AKSf3Jc7VE+cBarwwnQjwEDJl+/a6NfFGDPiwAAAABJRU5ErkJggg=="/>
+                </svg>
+                Купить полную версию за 990&nbsp;р.
+              </a>
+              <div href="#" class="action__btn btn action__btn-mini">1798 пользователей, тренируются сейчас 61</div>
+            </div>
+            <div class="action__block action__bottom"></div>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn-down">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="18" viewBox="0 0 30 18">
+          <image id="_4781842_arrow_chevron_direction_down_move_icon_копия" data-name="4781842_arrow_chevron_direction_down_move_icon копия" width="30" height="18" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAASCAYAAABM8m7ZAAAA3UlEQVRIibXWIQ7CMBTG8T8L2xVQeDS3ADEFd2EnAPwMeBxX4ASAR+CQJCgOQF7yljRLt/WN9VN9r+37iZqOvpcPwBx4Ay/iZgpMgFsC7IE78ATWEdm1GlcxBV7qRgacgDwCmuvsTOuFwAfnQAqcB8ZznZk6vaPAJVBEwn2oWGWixS4C3oSKReI0h8Rb0To8FN6J+uB/8SC0Ce6LB6NtsBU3oV1wKG5GJeMOGGfAtoavtDajoXAbTh/UAjfhboJRAt7YhxeevgntA1f4xqllbUIl1UegT2Z66WG+DPwAkpBA5FPO5mkAAAAASUVORK5CYII="/>
+        </svg>
+      </a>
+    </section>
+
+    <section class="author border-top">
+      <div class="container">
+        <div class="author__inner">
+          <div class="author__left">
+            <img src="img/author/author-img.png" alt="Евгений Пеньков" class="author__image">
+          </div>
+          <div class="author__right">
+            <h2 class="author__title">Евгений Пеньков</h2>
+            <div class="author__descr">Автор программы</div>
+            <img class="author__img-mobile" src="img/author/author-img-mobile.png" alt="author">
+            <div class="author__cards-mobile">
+              <div class="author__card-mobile">
+                <svg class="author__card-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="39" height="38" viewBox="0 0 39 38">
+                  <image id="_2561353_check_circle_icon_копия_2" data-name="2561353_check_circle_icon копия 2" width="39" height="38" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAAAmCAYAAABH/4KQAAADWUlEQVRYhcWYS0hVQRjHf9qLGxIuWhSoN4mEiBa9o0UvsiySMlyVRNLGHiQSgi2inasKw7CN0SKojQuzkiyqi7TqYZvI3hQGFQQZPYwkjbFvZJzmPO/13j8cOGfmnO/7nZlvvnnkfen8SBqaCZQBJUCBmPkGDADPgaF0jE+N8c1iYA9QDiwB8jzeGwUeAzeAy8CTqI6itFwFcAJYHdWJ6C6wCxj04wGOAKuA1jAtVwqcA7bEhNLaANQAZ33A2oA6ed4UBFcNnAdmWeUjwB2gB3gIvAK+Sl0hsABYJq29HsiXumchwf4V+nTrUeCkVfZD/vwM8CHgx7SKgG3Aa+B2SLBhoMoLzgV2FTgkIzFT8gJTPdaV73BS7QBrBHZkEwxHKimVGDO1F7iYQahQYBiBqtVmBX9jrsBsuAq5tFSMncoVmA133Lj/KcE/miswE24RsMYob8128PvB1RhlIz5ZPGtgJly5UZYC3ucaTMMlZHWhdTOE03VyZRJsCrBUpr9xuDJrYDwIcKpWDSlp4TaPJVOcFusAHgEvgbkarsh66U0AnLlkOuAAjAOWkBlIaTawUcMVWC/6rbcQx8PGc50BGDfGZlg/OI2YK+F74qxDG7FgYgW/pSEN992qKAzRel0BgFHBCq3nMaZ8R7KdH8KYCTjsqIvaYrbPAQ33QhKv1oqQBr0A43Sl6XNEmMbgfgF9RmXUvYKCqAI+yVUVI8Y2G/d9wjQ+INReYLncq+RaHHFuvQ7MiQikVSz7DK0efaOT7yWjUg3p+piO4qjeSiPjLBruKdBrvHAQSGYBLCm+tHqFZQKcUrNxn/CZmjIlnbATHgwT4FRfdxvPajvXNIlwTeJDq9uMNxsOaWIzAas/2T8JYPutVhq0utcJ9w6otcragWMZ6uI8sdVuldeKb184pU6gwSprlnSRziBJio1mq7xBfP4nF5xSiwNwK9APnJbzuLAqkW/6xYYN1uJlJ+gIbCdwwTExj8qwV6vm+8Bb4LPUqfXYPGClZP61jpBQMbYPuOLnPMz5XFI2PNuDXgypa8BhV4zZ8upWU8pIpcy5qTSgUmKjMgwYEU82tRYCu2XHpuZjtTFx6Y+c3d2SKUnFXCSle2A9XTZIah+il/tqoai2lmrZ8zu2ZeAv8pPf7db6tuEAAAAASUVORK5CYII="/>
+                </svg>
+                <p class="author__card-info">
+                  Сертифицированный фитнес-тренер, эксперт в области человеческой анатомии, диетологии и нутрициологии.
+                </p>
+              </div>
+              <div class="author__card-mobile">
+                <svg class="author__card-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="39" height="38" viewBox="0 0 39 38">
+                  <image id="_2561353_check_circle_icon_копия_2" data-name="2561353_check_circle_icon копия 2" width="39" height="38" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAAAmCAYAAABH/4KQAAADWUlEQVRYhcWYS0hVQRjHf9qLGxIuWhSoN4mEiBa9o0UvsiySMlyVRNLGHiQSgi2inasKw7CN0SKojQuzkiyqi7TqYZvI3hQGFQQZPYwkjbFvZJzmPO/13j8cOGfmnO/7nZlvvnnkfen8SBqaCZQBJUCBmPkGDADPgaF0jE+N8c1iYA9QDiwB8jzeGwUeAzeAy8CTqI6itFwFcAJYHdWJ6C6wCxj04wGOAKuA1jAtVwqcA7bEhNLaANQAZ33A2oA6ed4UBFcNnAdmWeUjwB2gB3gIvAK+Sl0hsABYJq29HsiXumchwf4V+nTrUeCkVfZD/vwM8CHgx7SKgG3Aa+B2SLBhoMoLzgV2FTgkIzFT8gJTPdaV73BS7QBrBHZkEwxHKimVGDO1F7iYQahQYBiBqtVmBX9jrsBsuAq5tFSMncoVmA133Lj/KcE/miswE24RsMYob8128PvB1RhlIz5ZPGtgJly5UZYC3ucaTMMlZHWhdTOE03VyZRJsCrBUpr9xuDJrYDwIcKpWDSlp4TaPJVOcFusAHgEvgbkarsh66U0AnLlkOuAAjAOWkBlIaTawUcMVWC/6rbcQx8PGc50BGDfGZlg/OI2YK+F74qxDG7FgYgW/pSEN992qKAzRel0BgFHBCq3nMaZ8R7KdH8KYCTjsqIvaYrbPAQ33QhKv1oqQBr0A43Sl6XNEmMbgfgF9RmXUvYKCqAI+yVUVI8Y2G/d9wjQ+INReYLncq+RaHHFuvQ7MiQikVSz7DK0efaOT7yWjUg3p+piO4qjeSiPjLBruKdBrvHAQSGYBLCm+tHqFZQKcUrNxn/CZmjIlnbATHgwT4FRfdxvPajvXNIlwTeJDq9uMNxsOaWIzAas/2T8JYPutVhq0utcJ9w6otcragWMZ6uI8sdVuldeKb184pU6gwSprlnSRziBJio1mq7xBfP4nF5xSiwNwK9APnJbzuLAqkW/6xYYN1uJlJ+gIbCdwwTExj8qwV6vm+8Bb4LPUqfXYPGClZP61jpBQMbYPuOLnPMz5XFI2PNuDXgypa8BhV4zZ8upWU8pIpcy5qTSgUmKjMgwYEU82tRYCu2XHpuZjtTFx6Y+c3d2SKUnFXCSle2A9XTZIah+il/tqoai2lmrZ8zu2ZeAv8pPf7db6tuEAAAAASUVORK5CYII="/>
+                </svg>
+                <p class="author__card-info">
+                  Мастер спорта международного класса по жиму лежа, кандидат в мастера спорта по тяжелой атлетике.
+                </p>
+              </div>
+              <div class="author__card-mobile">
+                <svg class="author__card-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="39" height="38" viewBox="0 0 39 38">
+                  <image id="_2561353_check_circle_icon_копия_2" data-name="2561353_check_circle_icon копия 2" width="39" height="38" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAAAmCAYAAABH/4KQAAADWUlEQVRYhcWYS0hVQRjHf9qLGxIuWhSoN4mEiBa9o0UvsiySMlyVRNLGHiQSgi2inasKw7CN0SKojQuzkiyqi7TqYZvI3hQGFQQZPYwkjbFvZJzmPO/13j8cOGfmnO/7nZlvvnnkfen8SBqaCZQBJUCBmPkGDADPgaF0jE+N8c1iYA9QDiwB8jzeGwUeAzeAy8CTqI6itFwFcAJYHdWJ6C6wCxj04wGOAKuA1jAtVwqcA7bEhNLaANQAZ33A2oA6ed4UBFcNnAdmWeUjwB2gB3gIvAK+Sl0hsABYJq29HsiXumchwf4V+nTrUeCkVfZD/vwM8CHgx7SKgG3Aa+B2SLBhoMoLzgV2FTgkIzFT8gJTPdaV73BS7QBrBHZkEwxHKimVGDO1F7iYQahQYBiBqtVmBX9jrsBsuAq5tFSMncoVmA133Lj/KcE/miswE24RsMYob8128PvB1RhlIz5ZPGtgJly5UZYC3ucaTMMlZHWhdTOE03VyZRJsCrBUpr9xuDJrYDwIcKpWDSlp4TaPJVOcFusAHgEvgbkarsh66U0AnLlkOuAAjAOWkBlIaTawUcMVWC/6rbcQx8PGc50BGDfGZlg/OI2YK+F74qxDG7FgYgW/pSEN992qKAzRel0BgFHBCq3nMaZ8R7KdH8KYCTjsqIvaYrbPAQ33QhKv1oqQBr0A43Sl6XNEmMbgfgF9RmXUvYKCqAI+yVUVI8Y2G/d9wjQ+INReYLncq+RaHHFuvQ7MiQikVSz7DK0efaOT7yWjUg3p+piO4qjeSiPjLBruKdBrvHAQSGYBLCm+tHqFZQKcUrNxn/CZmjIlnbATHgwT4FRfdxvPajvXNIlwTeJDq9uMNxsOaWIzAas/2T8JYPutVhq0utcJ9w6otcragWMZ6uI8sdVuldeKb184pU6gwSprlnSRziBJio1mq7xBfP4nF5xSiwNwK9APnJbzuLAqkW/6xYYN1uJlJ+gIbCdwwTExj8qwV6vm+8Bb4LPUqfXYPGClZP61jpBQMbYPuOLnPMz5XFI2PNuDXgypa8BhV4zZ8upWU8pIpcy5qTSgUmKjMgwYEU82tRYCu2XHpuZjtTFx6Y+c3d2SKUnFXCSle2A9XTZIah+il/tqoai2lmrZ8zu2ZeAv8pPf7db6tuEAAAAASUVORK5CYII="/>
+                </svg>
+                <p class="author__card-info">
+                  Знает всё об идеальных пропорциях тела и доводит своих подопечных до грандиозного результата.
+                </p>
+              </div>
+              <div class="author__card-mobile">
+                <svg class="author__card-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="39" height="38" viewBox="0 0 39 38">
+                  <image id="_2561353_check_circle_icon_копия_2" data-name="2561353_check_circle_icon копия 2" width="39" height="38" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAAAmCAYAAABH/4KQAAADWUlEQVRYhcWYS0hVQRjHf9qLGxIuWhSoN4mEiBa9o0UvsiySMlyVRNLGHiQSgi2inasKw7CN0SKojQuzkiyqi7TqYZvI3hQGFQQZPYwkjbFvZJzmPO/13j8cOGfmnO/7nZlvvnnkfen8SBqaCZQBJUCBmPkGDADPgaF0jE+N8c1iYA9QDiwB8jzeGwUeAzeAy8CTqI6itFwFcAJYHdWJ6C6wCxj04wGOAKuA1jAtVwqcA7bEhNLaANQAZ33A2oA6ed4UBFcNnAdmWeUjwB2gB3gIvAK+Sl0hsABYJq29HsiXumchwf4V+nTrUeCkVfZD/vwM8CHgx7SKgG3Aa+B2SLBhoMoLzgV2FTgkIzFT8gJTPdaV73BS7QBrBHZkEwxHKimVGDO1F7iYQahQYBiBqtVmBX9jrsBsuAq5tFSMncoVmA133Lj/KcE/miswE24RsMYob8128PvB1RhlIz5ZPGtgJly5UZYC3ucaTMMlZHWhdTOE03VyZRJsCrBUpr9xuDJrYDwIcKpWDSlp4TaPJVOcFusAHgEvgbkarsh66U0AnLlkOuAAjAOWkBlIaTawUcMVWC/6rbcQx8PGc50BGDfGZlg/OI2YK+F74qxDG7FgYgW/pSEN992qKAzRel0BgFHBCq3nMaZ8R7KdH8KYCTjsqIvaYrbPAQ33QhKv1oqQBr0A43Sl6XNEmMbgfgF9RmXUvYKCqAI+yVUVI8Y2G/d9wjQ+INReYLncq+RaHHFuvQ7MiQikVSz7DK0efaOT7yWjUg3p+piO4qjeSiPjLBruKdBrvHAQSGYBLCm+tHqFZQKcUrNxn/CZmjIlnbATHgwT4FRfdxvPajvXNIlwTeJDq9uMNxsOaWIzAas/2T8JYPutVhq0utcJ9w6otcragWMZ6uI8sdVuldeKb184pU6gwSprlnSRziBJio1mq7xBfP4nF5xSiwNwK9APnJbzuLAqkW/6xYYN1uJlJ+gIbCdwwTExj8qwV6vm+8Bb4LPUqfXYPGClZP61jpBQMbYPuOLnPMz5XFI2PNuDXgypa8BhV4zZ8upWU8pIpcy5qTSgUmKjMgwYEU82tRYCu2XHpuZjtTFx6Y+c3d2SKUnFXCSle2A9XTZIah+il/tqoai2lmrZ8zu2ZeAv8pPf7db6tuEAAAAASUVORK5CYII="/>
+                </svg>
+                <p class="author__card-info">
+                  Специализация - коррекция фигуры, работа на совершенствование физической формы.
+                </p>
+              </div>
+            </div>
+            <div class="author__cards">
+              <div class="author__card">
+                <svg class="author__card-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="52" height="50" viewBox="0 0 52 50">
+                  <image id="_2561353_check_circle_icon" data-name="2561353_check_circle_icon" width="52" height="50" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAAyCAYAAAATIfj2AAAEWUlEQVRogdVaTWgVVxT+3lShaf3pzpYYpahtoRHyQ1uQtJoUpYIrEbJoaRsxBXWTIl100VU32SRQyMpFhDTSTVEMgqWLCBKQKq4UEX9I2gZeS7tITNtohHzlynnP8ebcmTsz9728fHDhzcw9P9+759yfM1MiiYBoBdAJ4E0AOwFsArBR1D8EsADgHoA7AG4AuB3SuMG6gvIvAPgQwCcADgDYklG+DOBnAOMAJgEsF/QHMCOUo20g+SXJWYbDDMmjOXxpJfk1yc9Jrs8qHJH8guTfAYnYeC+DPz0k/4vJj2UJuV0SGu969jc584fkDSSfXo3llAsdAH7x0N8D4CKApti9Xt9/opfkQso/e5/kEMlDJF9L0NUsfb4j+cDS8YTk2zlGpoIZHzLfJJBYJvkjyS6SpRzxb2T2kjxN8izJ/QXImHvdacJDCWQmJSHzTix5WhKZnqdLUI6R+ZfksToT8SKTRKjXQeZXzxhfFTIuQrscE8BNklsbmYxGyKwzVx0j0/BkNEL9ivAiyd1rgYxN6CWSfykK+tcKGZvQgKLgcs71ZVXIxAmZ3PndUrDciOuML6H9ipLza41MnNAZRdH7a41MnFDZUjRdx9wJRsa0CMBbsq2P44I5+3keE4pAOwIYLAI4JKfYTDDnoXcUgSyK1gP4GECz/BG3POWKktkpZ7NrAO5X75L8VhnuLLuCsRxhUjTMDpJcEpklua7m0A+W0oWMcfs4o1MhcuaSJXspnkP2kfhPz5CpoGxdN0ko9dQgzOI21GtDaIP18B9PpRX0iUO2AZtUyAmg5HoQZVDiwmVxKIlU6Nlss+tBpIxIWlVGw2QKqaBTs+JjlUMUKzNVkLX6WUESqZBkoPhY5RBJrTmOlwG05DTkIhVHUTIt4mMcVQ6G0F1FqDOnMaSQKkrG5VuVgyF0XenQXcAgHKRCkHH59oyDLEh20X0m0OZ0D8lz0vYE0FcS3+KYjfep/BhVVu59Nd5l52n7FD9H7d22wffKMA4UDI1aQPNp/LkrYRYpQ2nQ1kCj06b4NyO+rxgh8+ZsWGE/krTNqCNK4ouN4RVv/WLsmpSTq8HxBhid44pfZfH5ub62YJ8i+GiVQ69NfLDRp/W3b5hpcUoRNlNjyyqQaXG8x51yLSuakh0k5xUl5g3dtjqSMbbuKX7Mi4+qnEvZEUVRZaTa60CmPeEN+5Ek2SSlXzkUmng+UaMyV0l0azlD8SlRR5qBQYdiShx3BCTT4cjfCgZ99PgYOpVgxGBCihtRDhKRyE6k2Djlq9PXsInbuRSjv5EcIXmY5HZHSJbk2WHpa78gsDGXljN2y/Lx0usAxgB0efZ/JBWkebneLCfNFz3lpwB8CmDa18GnyJG0nzl2FKFQFhu5Jp28CWy2HCelqB8K06JzxXamViGnwWxuP5Da9kcAtmaUnwXwE4CzAK6E+Lws9AeApoBuiv9vANghHyy9Is/m5IOmB1IDMMfmZ0X2EADwPz4AuTqZEY5dAAAAAElFTkSuQmCC"/>
+                </svg>
+                <div class="author__card-info">
+                  Сертифицированный фитнес-тренер, эксперт в области человеческой анатомии, диетологии и нутрициологии.
+                </div>
+              </div>
+              <div class="author__card">
+                <svg class="author__card-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="52" height="50" viewBox="0 0 52 50">
+                  <image id="_2561353_check_circle_icon" data-name="2561353_check_circle_icon" width="52" height="50" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAAyCAYAAAATIfj2AAAEWUlEQVRogdVaTWgVVxT+3lShaf3pzpYYpahtoRHyQ1uQtJoUpYIrEbJoaRsxBXWTIl100VU32SRQyMpFhDTSTVEMgqWLCBKQKq4UEX9I2gZeS7tITNtohHzlynnP8ebcmTsz9728fHDhzcw9P9+759yfM1MiiYBoBdAJ4E0AOwFsArBR1D8EsADgHoA7AG4AuB3SuMG6gvIvAPgQwCcADgDYklG+DOBnAOMAJgEsF/QHMCOUo20g+SXJWYbDDMmjOXxpJfk1yc9Jrs8qHJH8guTfAYnYeC+DPz0k/4vJj2UJuV0SGu969jc584fkDSSfXo3llAsdAH7x0N8D4CKApti9Xt9/opfkQso/e5/kEMlDJF9L0NUsfb4j+cDS8YTk2zlGpoIZHzLfJJBYJvkjyS6SpRzxb2T2kjxN8izJ/QXImHvdacJDCWQmJSHzTix5WhKZnqdLUI6R+ZfksToT8SKTRKjXQeZXzxhfFTIuQrscE8BNklsbmYxGyKwzVx0j0/BkNEL9ivAiyd1rgYxN6CWSfykK+tcKGZvQgKLgcs71ZVXIxAmZ3PndUrDciOuML6H9ipLza41MnNAZRdH7a41MnFDZUjRdx9wJRsa0CMBbsq2P44I5+3keE4pAOwIYLAI4JKfYTDDnoXcUgSyK1gP4GECz/BG3POWKktkpZ7NrAO5X75L8VhnuLLuCsRxhUjTMDpJcEpklua7m0A+W0oWMcfs4o1MhcuaSJXspnkP2kfhPz5CpoGxdN0ko9dQgzOI21GtDaIP18B9PpRX0iUO2AZtUyAmg5HoQZVDiwmVxKIlU6Nlss+tBpIxIWlVGw2QKqaBTs+JjlUMUKzNVkLX6WUESqZBkoPhY5RBJrTmOlwG05DTkIhVHUTIt4mMcVQ6G0F1FqDOnMaSQKkrG5VuVgyF0XenQXcAgHKRCkHH59oyDLEh20X0m0OZ0D8lz0vYE0FcS3+KYjfep/BhVVu59Nd5l52n7FD9H7d22wffKMA4UDI1aQPNp/LkrYRYpQ2nQ1kCj06b4NyO+rxgh8+ZsWGE/krTNqCNK4ouN4RVv/WLsmpSTq8HxBhid44pfZfH5ub62YJ8i+GiVQ69NfLDRp/W3b5hpcUoRNlNjyyqQaXG8x51yLSuakh0k5xUl5g3dtjqSMbbuKX7Mi4+qnEvZEUVRZaTa60CmPeEN+5Ek2SSlXzkUmng+UaMyV0l0azlD8SlRR5qBQYdiShx3BCTT4cjfCgZ99PgYOpVgxGBCihtRDhKRyE6k2Djlq9PXsInbuRSjv5EcIXmY5HZHSJbk2WHpa78gsDGXljN2y/Lx0usAxgB0efZ/JBWkebneLCfNFz3lpwB8CmDa18GnyJG0nzl2FKFQFhu5Jp28CWy2HCelqB8K06JzxXamViGnwWxuP5Da9kcAtmaUnwXwE4CzAK6E+Lws9AeApoBuiv9vANghHyy9Is/m5IOmB1IDMMfmZ0X2EADwPz4AuTqZEY5dAAAAAElFTkSuQmCC"/>
+                </svg>
+                <div class="author__card-info">
+                  Специализация - коррекция фигуры, работа на совершенствование физической формы.
+                </div>
+              </div>
+              <div class="author__card">
+                <svg class="author__card-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="52" height="50" viewBox="0 0 52 50">
+                  <image id="_2561353_check_circle_icon" data-name="2561353_check_circle_icon" width="52" height="50" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAAyCAYAAAATIfj2AAAEWUlEQVRogdVaTWgVVxT+3lShaf3pzpYYpahtoRHyQ1uQtJoUpYIrEbJoaRsxBXWTIl100VU32SRQyMpFhDTSTVEMgqWLCBKQKq4UEX9I2gZeS7tITNtohHzlynnP8ebcmTsz9728fHDhzcw9P9+759yfM1MiiYBoBdAJ4E0AOwFsArBR1D8EsADgHoA7AG4AuB3SuMG6gvIvAPgQwCcADgDYklG+DOBnAOMAJgEsF/QHMCOUo20g+SXJWYbDDMmjOXxpJfk1yc9Jrs8qHJH8guTfAYnYeC+DPz0k/4vJj2UJuV0SGu969jc584fkDSSfXo3llAsdAH7x0N8D4CKApti9Xt9/opfkQso/e5/kEMlDJF9L0NUsfb4j+cDS8YTk2zlGpoIZHzLfJJBYJvkjyS6SpRzxb2T2kjxN8izJ/QXImHvdacJDCWQmJSHzTix5WhKZnqdLUI6R+ZfksToT8SKTRKjXQeZXzxhfFTIuQrscE8BNklsbmYxGyKwzVx0j0/BkNEL9ivAiyd1rgYxN6CWSfykK+tcKGZvQgKLgcs71ZVXIxAmZ3PndUrDciOuML6H9ipLza41MnNAZRdH7a41MnFDZUjRdx9wJRsa0CMBbsq2P44I5+3keE4pAOwIYLAI4JKfYTDDnoXcUgSyK1gP4GECz/BG3POWKktkpZ7NrAO5X75L8VhnuLLuCsRxhUjTMDpJcEpklua7m0A+W0oWMcfs4o1MhcuaSJXspnkP2kfhPz5CpoGxdN0ko9dQgzOI21GtDaIP18B9PpRX0iUO2AZtUyAmg5HoQZVDiwmVxKIlU6Nlss+tBpIxIWlVGw2QKqaBTs+JjlUMUKzNVkLX6WUESqZBkoPhY5RBJrTmOlwG05DTkIhVHUTIt4mMcVQ6G0F1FqDOnMaSQKkrG5VuVgyF0XenQXcAgHKRCkHH59oyDLEh20X0m0OZ0D8lz0vYE0FcS3+KYjfep/BhVVu59Nd5l52n7FD9H7d22wffKMA4UDI1aQPNp/LkrYRYpQ2nQ1kCj06b4NyO+rxgh8+ZsWGE/krTNqCNK4ouN4RVv/WLsmpSTq8HxBhid44pfZfH5ub62YJ8i+GiVQ69NfLDRp/W3b5hpcUoRNlNjyyqQaXG8x51yLSuakh0k5xUl5g3dtjqSMbbuKX7Mi4+qnEvZEUVRZaTa60CmPeEN+5Ek2SSlXzkUmng+UaMyV0l0azlD8SlRR5qBQYdiShx3BCTT4cjfCgZ99PgYOpVgxGBCihtRDhKRyE6k2Djlq9PXsInbuRSjv5EcIXmY5HZHSJbk2WHpa78gsDGXljN2y/Lx0usAxgB0efZ/JBWkebneLCfNFz3lpwB8CmDa18GnyJG0nzl2FKFQFhu5Jp28CWy2HCelqB8K06JzxXamViGnwWxuP5Da9kcAtmaUnwXwE4CzAK6E+Lws9AeApoBuiv9vANghHyy9Is/m5IOmB1IDMMfmZ0X2EADwPz4AuTqZEY5dAAAAAElFTkSuQmCC"/>
+                </svg>
+                <div class="author__card-info">
+                  Знает всё об идеальных пропорциях тела и доводит своих подопечных до грандиозного результата.
+                </div>
+              </div>
+              <div class="author__card">
+                <svg class="author__card-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="52" height="50" viewBox="0 0 52 50">
+                  <image id="_2561353_check_circle_icon" data-name="2561353_check_circle_icon" width="52" height="50" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAAyCAYAAAATIfj2AAAEWUlEQVRogdVaTWgVVxT+3lShaf3pzpYYpahtoRHyQ1uQtJoUpYIrEbJoaRsxBXWTIl100VU32SRQyMpFhDTSTVEMgqWLCBKQKq4UEX9I2gZeS7tITNtohHzlynnP8ebcmTsz9728fHDhzcw9P9+759yfM1MiiYBoBdAJ4E0AOwFsArBR1D8EsADgHoA7AG4AuB3SuMG6gvIvAPgQwCcADgDYklG+DOBnAOMAJgEsF/QHMCOUo20g+SXJWYbDDMmjOXxpJfk1yc9Jrs8qHJH8guTfAYnYeC+DPz0k/4vJj2UJuV0SGu969jc584fkDSSfXo3llAsdAH7x0N8D4CKApti9Xt9/opfkQso/e5/kEMlDJF9L0NUsfb4j+cDS8YTk2zlGpoIZHzLfJJBYJvkjyS6SpRzxb2T2kjxN8izJ/QXImHvdacJDCWQmJSHzTix5WhKZnqdLUI6R+ZfksToT8SKTRKjXQeZXzxhfFTIuQrscE8BNklsbmYxGyKwzVx0j0/BkNEL9ivAiyd1rgYxN6CWSfykK+tcKGZvQgKLgcs71ZVXIxAmZ3PndUrDciOuML6H9ipLza41MnNAZRdH7a41MnFDZUjRdx9wJRsa0CMBbsq2P44I5+3keE4pAOwIYLAI4JKfYTDDnoXcUgSyK1gP4GECz/BG3POWKktkpZ7NrAO5X75L8VhnuLLuCsRxhUjTMDpJcEpklua7m0A+W0oWMcfs4o1MhcuaSJXspnkP2kfhPz5CpoGxdN0ko9dQgzOI21GtDaIP18B9PpRX0iUO2AZtUyAmg5HoQZVDiwmVxKIlU6Nlss+tBpIxIWlVGw2QKqaBTs+JjlUMUKzNVkLX6WUESqZBkoPhY5RBJrTmOlwG05DTkIhVHUTIt4mMcVQ6G0F1FqDOnMaSQKkrG5VuVgyF0XenQXcAgHKRCkHH59oyDLEh20X0m0OZ0D8lz0vYE0FcS3+KYjfep/BhVVu59Nd5l52n7FD9H7d22wffKMA4UDI1aQPNp/LkrYRYpQ2nQ1kCj06b4NyO+rxgh8+ZsWGE/krTNqCNK4ouN4RVv/WLsmpSTq8HxBhid44pfZfH5ub62YJ8i+GiVQ69NfLDRp/W3b5hpcUoRNlNjyyqQaXG8x51yLSuakh0k5xUl5g3dtjqSMbbuKX7Mi4+qnEvZEUVRZaTa60CmPeEN+5Ek2SSlXzkUmng+UaMyV0l0azlD8SlRR5qBQYdiShx3BCTT4cjfCgZ99PgYOpVgxGBCihtRDhKRyE6k2Djlq9PXsInbuRSjv5EcIXmY5HZHSJbk2WHpa78gsDGXljN2y/Lx0usAxgB0efZ/JBWkebneLCfNFz3lpwB8CmDa18GnyJG0nzl2FKFQFhu5Jp28CWy2HCelqB8K06JzxXamViGnwWxuP5Da9kcAtmaUnwXwE4CzAK6E+Lws9AeApoBuiv9vANghHyy9Is/m5IOmB1IDMMfmZ0X2EADwPz4AuTqZEY5dAAAAAElFTkSuQmCC"/>
+                </svg>
+                <div class="author__card-info">
+                  Мастер спорта международного класса по жиму лежа, кандидат в мастера спорта по тяжелой атлетике.
+                </div>
+              </div>
+              <div class="author__card">
+                <svg class="author__card-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="52" height="50" viewBox="0 0 52 50">
+                  <image id="_2561353_check_circle_icon" data-name="2561353_check_circle_icon" width="52" height="50" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAAyCAYAAAATIfj2AAAEWUlEQVRogdVaTWgVVxT+3lShaf3pzpYYpahtoRHyQ1uQtJoUpYIrEbJoaRsxBXWTIl100VU32SRQyMpFhDTSTVEMgqWLCBKQKq4UEX9I2gZeS7tITNtohHzlynnP8ebcmTsz9728fHDhzcw9P9+759yfM1MiiYBoBdAJ4E0AOwFsArBR1D8EsADgHoA7AG4AuB3SuMG6gvIvAPgQwCcADgDYklG+DOBnAOMAJgEsF/QHMCOUo20g+SXJWYbDDMmjOXxpJfk1yc9Jrs8qHJH8guTfAYnYeC+DPz0k/4vJj2UJuV0SGu969jc584fkDSSfXo3llAsdAH7x0N8D4CKApti9Xt9/opfkQso/e5/kEMlDJF9L0NUsfb4j+cDS8YTk2zlGpoIZHzLfJJBYJvkjyS6SpRzxb2T2kjxN8izJ/QXImHvdacJDCWQmJSHzTix5WhKZnqdLUI6R+ZfksToT8SKTRKjXQeZXzxhfFTIuQrscE8BNklsbmYxGyKwzVx0j0/BkNEL9ivAiyd1rgYxN6CWSfykK+tcKGZvQgKLgcs71ZVXIxAmZ3PndUrDciOuML6H9ipLza41MnNAZRdH7a41MnFDZUjRdx9wJRsa0CMBbsq2P44I5+3keE4pAOwIYLAI4JKfYTDDnoXcUgSyK1gP4GECz/BG3POWKktkpZ7NrAO5X75L8VhnuLLuCsRxhUjTMDpJcEpklua7m0A+W0oWMcfs4o1MhcuaSJXspnkP2kfhPz5CpoGxdN0ko9dQgzOI21GtDaIP18B9PpRX0iUO2AZtUyAmg5HoQZVDiwmVxKIlU6Nlss+tBpIxIWlVGw2QKqaBTs+JjlUMUKzNVkLX6WUESqZBkoPhY5RBJrTmOlwG05DTkIhVHUTIt4mMcVQ6G0F1FqDOnMaSQKkrG5VuVgyF0XenQXcAgHKRCkHH59oyDLEh20X0m0OZ0D8lz0vYE0FcS3+KYjfep/BhVVu59Nd5l52n7FD9H7d22wffKMA4UDI1aQPNp/LkrYRYpQ2nQ1kCj06b4NyO+rxgh8+ZsWGE/krTNqCNK4ouN4RVv/WLsmpSTq8HxBhid44pfZfH5ub62YJ8i+GiVQ69NfLDRp/W3b5hpcUoRNlNjyyqQaXG8x51yLSuakh0k5xUl5g3dtjqSMbbuKX7Mi4+qnEvZEUVRZaTa60CmPeEN+5Ek2SSlXzkUmng+UaMyV0l0azlD8SlRR5qBQYdiShx3BCTT4cjfCgZ99PgYOpVgxGBCihtRDhKRyE6k2Djlq9PXsInbuRSjv5EcIXmY5HZHSJbk2WHpa78gsDGXljN2y/Lx0usAxgB0efZ/JBWkebneLCfNFz3lpwB8CmDa18GnyJG0nzl2FKFQFhu5Jp28CWy2HCelqB8K06JzxXamViGnwWxuP5Da9kcAtmaUnwXwE4CzAK6E+Lws9AeApoBuiv9vANghHyy9Is/m5IOmB1IDMMfmZ0X2EADwPz4AuTqZEY5dAAAAAElFTkSuQmCC"/>
+                </svg>
+                <div class="author__card-info">
+                  Имеет опыт подготовки девушек к турниру по фитнес-бикини, которые заняли призовые места в конкурсе.
+                </div>
+              </div>
+              <div class="author__card">
+                <svg class="author__card-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="52" height="50" viewBox="0 0 52 50">
+                  <image id="_2561353_check_circle_icon" data-name="2561353_check_circle_icon" width="52" height="50" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAAyCAYAAAATIfj2AAAEWUlEQVRogdVaTWgVVxT+3lShaf3pzpYYpahtoRHyQ1uQtJoUpYIrEbJoaRsxBXWTIl100VU32SRQyMpFhDTSTVEMgqWLCBKQKq4UEX9I2gZeS7tITNtohHzlynnP8ebcmTsz9728fHDhzcw9P9+759yfM1MiiYBoBdAJ4E0AOwFsArBR1D8EsADgHoA7AG4AuB3SuMG6gvIvAPgQwCcADgDYklG+DOBnAOMAJgEsF/QHMCOUo20g+SXJWYbDDMmjOXxpJfk1yc9Jrs8qHJH8guTfAYnYeC+DPz0k/4vJj2UJuV0SGu969jc584fkDSSfXo3llAsdAH7x0N8D4CKApti9Xt9/opfkQso/e5/kEMlDJF9L0NUsfb4j+cDS8YTk2zlGpoIZHzLfJJBYJvkjyS6SpRzxb2T2kjxN8izJ/QXImHvdacJDCWQmJSHzTix5WhKZnqdLUI6R+ZfksToT8SKTRKjXQeZXzxhfFTIuQrscE8BNklsbmYxGyKwzVx0j0/BkNEL9ivAiyd1rgYxN6CWSfykK+tcKGZvQgKLgcs71ZVXIxAmZ3PndUrDciOuML6H9ipLza41MnNAZRdH7a41MnFDZUjRdx9wJRsa0CMBbsq2P44I5+3keE4pAOwIYLAI4JKfYTDDnoXcUgSyK1gP4GECz/BG3POWKktkpZ7NrAO5X75L8VhnuLLuCsRxhUjTMDpJcEpklua7m0A+W0oWMcfs4o1MhcuaSJXspnkP2kfhPz5CpoGxdN0ko9dQgzOI21GtDaIP18B9PpRX0iUO2AZtUyAmg5HoQZVDiwmVxKIlU6Nlss+tBpIxIWlVGw2QKqaBTs+JjlUMUKzNVkLX6WUESqZBkoPhY5RBJrTmOlwG05DTkIhVHUTIt4mMcVQ6G0F1FqDOnMaSQKkrG5VuVgyF0XenQXcAgHKRCkHH59oyDLEh20X0m0OZ0D8lz0vYE0FcS3+KYjfep/BhVVu59Nd5l52n7FD9H7d22wffKMA4UDI1aQPNp/LkrYRYpQ2nQ1kCj06b4NyO+rxgh8+ZsWGE/krTNqCNK4ouN4RVv/WLsmpSTq8HxBhid44pfZfH5ub62YJ8i+GiVQ69NfLDRp/W3b5hpcUoRNlNjyyqQaXG8x51yLSuakh0k5xUl5g3dtjqSMbbuKX7Mi4+qnEvZEUVRZaTa60CmPeEN+5Ek2SSlXzkUmng+UaMyV0l0azlD8SlRR5qBQYdiShx3BCTT4cjfCgZ99PgYOpVgxGBCihtRDhKRyE6k2Djlq9PXsInbuRSjv5EcIXmY5HZHSJbk2WHpa78gsDGXljN2y/Lx0usAxgB0efZ/JBWkebneLCfNFz3lpwB8CmDa18GnyJG0nzl2FKFQFhu5Jp28CWy2HCelqB8K06JzxXamViGnwWxuP5Da9kcAtmaUnwXwE4CzAK6E+Lws9AeApoBuiv9vANghHyy9Is/m5IOmB1IDMMfmZ0X2EADwPz4AuTqZEY5dAAAAAElFTkSuQmCC"/>
+                </svg>
+                <div class="author__card-info">
+                  Мастер спорта международного класса по жиму лежа, кандидат в мастера спорта по тяжелой атлетике.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="author-text text">Евгений пеньков</div>
+      <a href="#" class="btn-down">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="18" viewBox="0 0 30 18">
+          <image id="_4781842_arrow_chevron_direction_down_move_icon_копия" data-name="4781842_arrow_chevron_direction_down_move_icon копия" width="30" height="18" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAASCAYAAABM8m7ZAAAA3UlEQVRIibXWIQ7CMBTG8T8L2xVQeDS3ADEFd2EnAPwMeBxX4ASAR+CQJCgOQF7yljRLt/WN9VN9r+37iZqOvpcPwBx4Ay/iZgpMgFsC7IE78ATWEdm1GlcxBV7qRgacgDwCmuvsTOuFwAfnQAqcB8ZznZk6vaPAJVBEwn2oWGWixS4C3oSKReI0h8Rb0To8FN6J+uB/8SC0Ce6LB6NtsBU3oV1wKG5GJeMOGGfAtoavtDajoXAbTh/UAjfhboJRAt7YhxeevgntA1f4xqllbUIl1UegT2Z66WG+DPwAkpBA5FPO5mkAAAAASUVORK5CYII="/>
+        </svg>
+      </a>
+    </section>
+
+    <section class="action">
+      <div class="container">
+        <div class="action__inner">
+          <div class="action__left">
+            <h2 class="action__title">начните тренироваться сейчас, или в любое время</h2>
+            <div class="action__subtitle">Программа тренировок</div>
+            <h3 class="action__title">делай ноги</h3>
+            <p class="action__descr">Программа для тех, кто хочет эффектные, стройные, подтянутые ножки. Добавьте себе женственности и сексуальности!</p>
+          </div>
+          <div class="action__right">
+            <div class="action__block action__top"></div>
+            <div class="action__btns">
+              <a href="#" class="action__btn btn btn-pink">
+                <svg class="action__btn-bag btn__bag" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="26" viewBox="0 0 20 26">
+                  <image id="_2849808_shop_package_multimedia_icon" data-name="2849808_shop_package_multimedia_icon" width="20" height="26" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAaCAYAAAC3g3x9AAABBklEQVRIie2Tv2oCQRDGfwbRICJXSAJWvkGCve8gGALWadLmz9skfao8gpUPELXwGRQbicFCMF9YmYTNsXc5wpb3wcDufDu/mxk4JOXFtaSxpLWFO1/l1WQZFUlPytazvSkMvDXUXtKDpLakM0mPlpO9KQxcWNFdwLs3b1EUWPcG7QT8jufX034VuLT4VsM7D4Adv+X7Nyl/6ha7BM6Jo5Xr8NRQr8AHUANGlnsB9qlPhfwmMDyyJG1sH13bQ+LtKAnsMOR37b45iTTqj6qB3DvwBlSAbcB3uTlwsLd/Aj+BXk4TDnSRZUYfuQSWwBJYRP6/3AKSf3Jc7VE+cBarwwnQjwEDJl+/a6NfFGDPiwAAAABJRU5ErkJggg=="/>
+                </svg>
+                Купить полную версию за 990&nbsp;р.
+              </a>
+              <div href="#" class="action__btn btn action__btn-mini">1798 пользователей, тренируются сейчас 61</div>
+            </div>
+            <div class="action__block action__bottom"></div>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn-down">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="18" viewBox="0 0 30 18">
+          <image id="_4781842_arrow_chevron_direction_down_move_icon_копия" data-name="4781842_arrow_chevron_direction_down_move_icon копия" width="30" height="18" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAASCAYAAABM8m7ZAAAA3UlEQVRIibXWIQ7CMBTG8T8L2xVQeDS3ADEFd2EnAPwMeBxX4ASAR+CQJCgOQF7yljRLt/WN9VN9r+37iZqOvpcPwBx4Ay/iZgpMgFsC7IE78ATWEdm1GlcxBV7qRgacgDwCmuvsTOuFwAfnQAqcB8ZznZk6vaPAJVBEwn2oWGWixS4C3oSKReI0h8Rb0To8FN6J+uB/8SC0Ce6LB6NtsBU3oV1wKG5GJeMOGGfAtoavtDajoXAbTh/UAjfhboJRAt7YhxeevgntA1f4xqllbUIl1UegT2Z66WG+DPwAkpBA5FPO5mkAAAAASUVORK5CYII="/>
+        </svg>
+      </a>
+    </section>
+
+    <div class="reviews border-top">
+      <div class="container">
+        <h2 class="reviews__title">отзывы клиентов</h2>
+        <div class="reviews__info">
+          <p class="reviews__descr">Для наглядности результатов, взгляните на фото клиентов до/после,
+            реальные отзывы и мотивирующие достижения. Это впечатляет!
+          </p>
+          <div class="reviews__slider-btns">
+            <button class="reviews__slider-btn reviews__slider-prev">
+              <svg class="reviews__slider-arrow" width="15" height="26" viewBox="0 0 15 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line x1="1.10847" y1="12.59" x2="13.59" y2="1.89154" stroke="#F4BDEE" stroke-width="2" stroke-linecap="round"/>
+                <line x1="1.41324" y1="12.9477" x2="13.9477" y2="24.5868" stroke="#F4BDEE" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </button>
+            <button class="reviews__slider-btn reviews__slider-next">
+              <svg class="reviews__slider-arrow" width="15" height="26" viewBox="0 0 15 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line x1="1.10847" y1="12.59" x2="13.59" y2="1.89154" stroke="#F4BDEE" stroke-width="2" stroke-linecap="round"/>
+                <line x1="1.41324" y1="12.9477" x2="13.9477" y2="24.5868" stroke="#F4BDEE" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="reviews__slider">
+        <div class="reviews__slider-item">
+          <img src="img/reviews/reviews-img-1.png" alt="avatar" class="reviews__slider-img">
+          <div class="reviews__slider-content">
+            <div class="reviews__slider-info">
+              <div class="reviews__slider-name">Земфира</div>
+              <div class="reviews__slider-rating">
+                <img src="img/icons/star.svg" alt="star icon">
+                <span class="reviews__slider-number">5</span>
+              </div>
+            </div>
+            <p class="reviews__slider-descr">
+              Девчули, согласитесь со мной, насколько конструктивно спортивная тренировка способна изменить
+              фигуру, привычки и образ жизни в целом. Наше тело — пластилин, имея желание из него можно слепить,
+              что хочется. Я слышала это выражение.
+            </p>
+            <a href="#" target="_blank" class="reviews__btn btn">
+              <img class="reviews__btn-img" src="img/icons/instagram.svg" alt="instagram icon">
+              @vikarusanova
+            </a>
+          </div>
+        </div>
+        <div class="reviews__slider-item">
+          <img src="img/reviews/reviews-img-2.png" alt="avatar" class="reviews__slider-img">
+          <div class="reviews__slider-content">
+            <div class="reviews__slider-info">
+              <div class="reviews__slider-name">Вики</div>
+              <div class="reviews__slider-rating">
+                <img src="img/icons/star.svg" alt="star icon">
+                <span class="reviews__slider-number">5</span>
+              </div>
+            </div>
+            <p class="reviews__slider-descr">
+              Девчули, согласитесь со мной, насколько конструктивно спортивная тренировка способна изменить
+              фигуру, привычки и образ жизни в целом. Наше тело — пластилин, имея желание из него можно слепить,
+              что хочется. Я слышала это выражение. Девчули, согласитесь со мной, насколько конструктивно спортивная тренировка способна изменить
+              фигуру, привычки и образ жизни в целом. Наше тело — пластилин, имея желание из него можно слепить,
+              что хочется. Я слышала это выражение.
+            </p>
+            <a href="#" target="_blank" class="reviews__btn btn">
+              <img class="reviews__btn-img" src="img/icons/instagram.svg" alt="instagram icon">
+              @vikarusanova
+            </a>
+          </div>
+        </div>
+        <div class="reviews__slider-item">
+          <img src="img/reviews/reviews-img-3.png" alt="avatar" class="reviews__slider-img">
+          <div class="reviews__slider-content">
+            <div class="reviews__slider-info">
+              <div class="reviews__slider-name">Земфира</div>
+              <div class="reviews__slider-rating">
+                <img src="img/icons/star.svg" alt="star icon">
+                <span class="reviews__slider-number">5</span>
+              </div>
+            </div>
+            <p class="reviews__slider-descr">
+              Девчули, согласитесь со мной, насколько конструктивно спортивная тренировка способна изменить
+              фигуру, привычки и образ жизни в целом. Наше тело — пластилин, имея желание из него можно слепить,
+              что хочется. Я слышала это выражение.
+            </p>
+            <a href="#" target="_blank" class="reviews__btn btn">
+              <img class="reviews__btn-img" src="img/icons/instagram.svg" alt="instagram icon">
+              @vikarusanova
+            </a>
+          </div>
+        </div>
+        <div class="reviews__slider-item">
+          <img src="img/reviews/reviews-img-4.png" alt="avatar" class="reviews__slider-img">
+          <div class="reviews__slider-content">
+            <div class="reviews__slider-info">
+              <div class="reviews__slider-name">A L E X A N D R A</div>
+              <div class="reviews__slider-rating">
+                <img src="img/icons/star.svg" alt="star icon">
+                <span class="reviews__slider-number">5</span>
+              </div>
+            </div>
+            <p class="reviews__slider-descr">
+              Девчули, согласитесь со мной, насколько конструктивно спортивная тренировка способна изменить
+              фигуру, привычки и образ жизни в целом. Наше тело — пластилин, имея желание из него можно слепить,
+              что хочется. Я слышала это выражение.
+            </p>
+            <a href="#" target="_blank" class="reviews__btn btn">
+              <img class="reviews__btn-img" src="img/icons/instagram.svg" alt="instagram icon">
+              @vikarusanova
+            </a>
+          </div>
+        </div>
+        <div class="reviews__slider-item">
+          <img src="img/reviews/reviews-img-5.png" alt="avatar" class="reviews__slider-img">
+          <div class="reviews__slider-content">
+            <div class="reviews__slider-info">
+              <div class="reviews__slider-name">Дария</div>
+              <div class="reviews__slider-rating">
+                <img src="img/icons/star.svg" alt="star icon">
+                <span class="reviews__slider-number">5</span>
+              </div>
+            </div>
+            <p class="reviews__slider-descr">
+              Девчули, согласитесь со мной, насколько конструктивно спортивная тренировка способна изменить
+              фигуру, привычки и образ жизни в целом. Наше тело — пластилин, имея желание из него можно слепить,
+              что хочется. Я слышала это выражение.
+            </p>
+            <a href="#" target="_blank" class="reviews__btn btn">
+              <img class="reviews__btn-img" src="img/icons/instagram.svg" alt="instagram icon">
+              @vikarusanova
+            </a>
+          </div>
+        </div>
+        <div class="reviews__slider-item">
+          <img src="img/reviews/reviews-img-2.png" alt="avatar" class="reviews__slider-img">
+          <div class="reviews__slider-content">
+            <div class="reviews__slider-info">
+              <div class="reviews__slider-name">Евгения</div>
+              <div class="reviews__slider-rating">
+                <img src="img/icons/star.svg" alt="star icon">
+                <span class="reviews__slider-number">5</span>
+              </div>
+            </div>
+            <p class="reviews__slider-descr">
+              Девчули, согласитесь со мной, насколько конструктивно спортивная тренировка способна изменить
+              фигуру, привычки и образ жизни в целом. Наше тело — пластилин, имея желание из него можно слепить,
+              что хочется. Я слышала это выражение.
+            </p>
+            <a href="#" target="_blank" class="reviews__btn btn">
+              <img class="reviews__btn-img" src="img/icons/instagram.svg" alt="instagram icon">
+              @vikarusanova
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="reviews__slider-dots"></div>
+    </div>
+
+    <section class="advantages">
+      <div class="container">
+        <div class="advantages__inner">
+          <h2 class="advantages__title">онлайн фитнес клуб <span>4me.fit</span></h2>
+          <div class="advantages__items">
+            <div class="advantages__item">
+              <div class="advantages__item-left">
+                <h3 class="advantages__item-title">Смотри и повторяй</h3>
+                <p class="advantages__item-descr">
+                  В платформе 4Me.Fit вы можете заниматься по выбранной программе тренировок
+                  в любое комфортное для вас время. Тренировка представлена видеоплеером с потоковым
+                  вещанием, где каждое упражнение представлено видеороликом записанное тренером, в котором
+                  он демонстрирует технику выполнения, дополненное подсказками. Благодаря платформе
+                  4Me.Fit вы сможете отслеживать прогресс ваших тренировок, продолжить прерванную тренировку
+                  и включить режим автоматической тренировки на любом устройстве.
+                </p>
+                <a href="#" class="advantages__btn btn">Попробовать бесплатно</a>
+              </div>
+              <div class="advantages__item-right">
+                <img src="img/advantages/advantages-img-1.png" alt="image" class="advantages__item-img">
+              </div>
+            </div>
+            <div class="advantages__item">
+              <div class="advantages__item-left">
+                <img src="img/advantages/advantages-img-2.png" alt="image" class="advantages__item-img">
+              </div>
+              <div class="advantages__item-right">
+                <h3 class="advantages__item-title">В любое время</h3>
+                <p class="advantages__item-descr">
+                  Формат онлайн-занятий – лучшее решение для вас, если стоит цель по улучшению качества тела,
+                   но совсем нет времени и возможности подстраиваться под чужое расписание! Достаточно прийти
+                    домой, расстелить коврик и выполнить тренировку.
+                </p>
+                <a href="#" class="advantages__btn btn">Попробовать бесплатно</a>
+              </div>
+            </div>
+            <div class="advantages__item">
+              <div class="advantages__item-left">
+                <h3 class="advantages__item-title">С любого устройства</h3>
+                <p class="advantages__item-descr">
+                  Платформа 4Me.Fit полностью адаптирована для смартфона, планшета и персонального компьютера!
+                </p>
+                <a href="#" class="advantages__btn btn">Попробовать бесплатно</a>
+              </div>
+              <div class="advantages__item-right">
+                <img src="img/advantages/advantages-img-3.png" alt="image" class="advantages__item-img">
+              </div>
+            </div>
+            <div class="advantages__item">
+              <div class="advantages__item-left">
+                <img src="img/advantages/advantages-img-4.png" alt="image" class="advantages__item-img">
+              </div>
+              <div class="advantages__item-right">
+                <h3 class="advantages__item-title advantages__item-title_big">присоединяйтесь к клубу <span>4me.fit</span></h3>
+                <div class="advantages__item-btns">
+                  <a href="#" class="advantages__btn btn btn-pink">
+                    <svg class="action__btn-bag btn__bag" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="26" viewBox="0 0 20 26">
+                      <image id="_2849808_shop_package_multimedia_icon" data-name="2849808_shop_package_multimedia_icon" width="20" height="26" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAaCAYAAAC3g3x9AAABBklEQVRIie2Tv2oCQRDGfwbRICJXSAJWvkGCve8gGALWadLmz9skfao8gpUPELXwGRQbicFCMF9YmYTNsXc5wpb3wcDufDu/mxk4JOXFtaSxpLWFO1/l1WQZFUlPytazvSkMvDXUXtKDpLakM0mPlpO9KQxcWNFdwLs3b1EUWPcG7QT8jufX034VuLT4VsM7D4Adv+X7Nyl/6ha7BM6Jo5Xr8NRQr8AHUANGlnsB9qlPhfwmMDyyJG1sH13bQ+LtKAnsMOR37b45iTTqj6qB3DvwBlSAbcB3uTlwsLd/Aj+BXk4TDnSRZUYfuQSWwBJYRP6/3AKSf3Jc7VE+cBarwwnQjwEDJl+/a6NfFGDPiwAAAABJRU5ErkJggg=="/>
+                    </svg>
+                    Купить полную версию за 990 р.
+                  </a>
+                  <a href="#" class="advantages__btn btn">Попробовать бесплатно</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn-down">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="18" viewBox="0 0 30 18">
+          <image id="_4781842_arrow_chevron_direction_down_move_icon_копия" data-name="4781842_arrow_chevron_direction_down_move_icon копия" width="30" height="18" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAASCAYAAABM8m7ZAAAA3UlEQVRIibXWIQ7CMBTG8T8L2xVQeDS3ADEFd2EnAPwMeBxX4ASAR+CQJCgOQF7yljRLt/WN9VN9r+37iZqOvpcPwBx4Ay/iZgpMgFsC7IE78ATWEdm1GlcxBV7qRgacgDwCmuvsTOuFwAfnQAqcB8ZznZk6vaPAJVBEwn2oWGWixS4C3oSKReI0h8Rb0To8FN6J+uB/8SC0Ce6LB6NtsBU3oV1wKG5GJeMOGGfAtoavtDajoXAbTh/UAjfhboJRAt7YhxeevgntA1f4xqllbUIl1UegT2Z66WG+DPwAkpBA5FPO5mkAAAAASUVORK5CYII="/>
+        </svg>
+      </a>
+    </section>
+
+    <section class="faq border-bottom">
+      <div class="container">
+        <div class="faq__inner">
+          <h2 class="faq__title">частые вопросы</h2>
+          <div class="faq__items">
+            <div class="faq__item">
+              <div class="faq__item-top">
+                <div class="faq__item-question">Чем вы лучше тренера в зале?</div>
+                <button class="faq__item-btn">
+                  <svg class="faq__item-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="9" viewBox="0 0 15 9">
+                    <image id="_4781842_arrow_chevron_direction_down_move_icon_копия_9" data-name="4781842_arrow_chevron_direction_down_move_icon копия 9" width="15" height="9" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAJCAYAAADtj3ZXAAAAi0lEQVQokYXRQQ4BQRCF4Y+ZO7CxEm7hIhYSp+AKTiEZ53ARYs/GypZIS0tkVM+8TXWq//9tavA43mGGC176M8QU5/QY44QDqh61ylziR0m+Yoclmo6CtG8yl/hbnT+2eW7yXOHZIX74+gcoFYRiW44K1thHYiS3CxaYRGJJbheEYsr3zqXM81n+gzeFbiGBHFPswAAAAABJRU5ErkJggg=="/>
+                  </svg>
+                </button>
+              </div>
+              <p class="faq__item-text">
+                Вы сможете пересматривать уроки неограниченное количество раз, повторять их более
+                осознанно. При желании всегда можно продлить доступ: имеется вариант пролонгации и
+                расширенные возможности в рамках подписки.
+              </p>
+            </div>
+            <div class="faq__item">
+              <div class="faq__item-top">
+                <div class="faq__item-question">Когда начинаем заниматься?</div>
+                <button class="faq__item-btn">
+                  <svg class="faq__item-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="9" viewBox="0 0 15 9">
+                    <image id="_4781842_arrow_chevron_direction_down_move_icon_копия_9" data-name="4781842_arrow_chevron_direction_down_move_icon копия 9" width="15" height="9" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAJCAYAAADtj3ZXAAAAi0lEQVQokYXRQQ4BQRCF4Y+ZO7CxEm7hIhYSp+AKTiEZ53ARYs/GypZIS0tkVM+8TXWq//9tavA43mGGC176M8QU5/QY44QDqh61ylziR0m+Yoclmo6CtG8yl/hbnT+2eW7yXOHZIX74+gcoFYRiW44K1thHYiS3CxaYRGJJbheEYsr3zqXM81n+gzeFbiGBHFPswAAAAABJRU5ErkJggg=="/>
+                  </svg>
+                </button>
+              </div>
+              <p class="faq__item-text">
+                Вы сможете пересматривать уроки неограниченное количество раз, повторять их более
+                осознанно. При желании всегда можно продлить доступ: имеется вариант пролонгации и
+                расширенные возможности в рамках подписки.
+              </p>
+            </div>
+            <div class="faq__item active">
+              <div class="faq__item-top">
+                <div class="faq__item-question">Если мне недостаточно отведённого для программы времени?</div>
+                <button class="faq__item-btn">
+                  <svg class="faq__item-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="9" viewBox="0 0 15 9">
+                    <image id="_4781842_arrow_chevron_direction_down_move_icon_копия_9" data-name="4781842_arrow_chevron_direction_down_move_icon копия 9" width="15" height="9" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAJCAYAAADtj3ZXAAAAi0lEQVQokYXRQQ4BQRCF4Y+ZO7CxEm7hIhYSp+AKTiEZ53ARYs/GypZIS0tkVM+8TXWq//9tavA43mGGC176M8QU5/QY44QDqh61ylziR0m+Yoclmo6CtG8yl/hbnT+2eW7yXOHZIX74+gcoFYRiW44K1thHYiS3CxaYRGJJbheEYsr3zqXM81n+gzeFbiGBHFPswAAAAABJRU5ErkJggg=="/>
+                  </svg>
+                </button>
+              </div>
+              <p class="faq__item-text active">
+                Вы сможете пересматривать уроки неограниченное количество раз, повторять их более
+                осознанно. При желании всегда можно продлить доступ: имеется вариант пролонгации и
+                расширенные возможности в рамках подписки.
+              </p>
+            </div>
+            <div class="faq__item">
+              <div class="faq__item-top">
+                <div class="faq__item-question">Могут ли тренировки навредить и есть ли противопоказания?</div>
+                <button class="faq__item-btn">
+                  <svg class="faq__item-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="9" viewBox="0 0 15 9">
+                    <image id="_4781842_arrow_chevron_direction_down_move_icon_копия_9" data-name="4781842_arrow_chevron_direction_down_move_icon копия 9" width="15" height="9" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAJCAYAAADtj3ZXAAAAi0lEQVQokYXRQQ4BQRCF4Y+ZO7CxEm7hIhYSp+AKTiEZ53ARYs/GypZIS0tkVM+8TXWq//9tavA43mGGC176M8QU5/QY44QDqh61ylziR0m+Yoclmo6CtG8yl/hbnT+2eW7yXOHZIX74+gcoFYRiW44K1thHYiS3CxaYRGJJbheEYsr3zqXM81n+gzeFbiGBHFPswAAAAABJRU5ErkJggg=="/>
+                  </svg>
+                </button>
+              </div>
+              <p class="faq__item-text">
+                Вы сможете пересматривать уроки неограниченное количество раз, повторять их более
+                осознанно. При желании всегда можно продлить доступ: имеется вариант пролонгации и
+                расширенные возможности в рамках подписки.
+              </p>
+            </div>
+            <div class="faq__item">
+              <div class="faq__item-top">
+                <div class="faq__item-question">Подойдут ли ваши программы новичкам?</div>
+                <button class="faq__item-btn">
+                  <svg class="faq__item-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="9" viewBox="0 0 15 9">
+                    <image id="_4781842_arrow_chevron_direction_down_move_icon_копия_9" data-name="4781842_arrow_chevron_direction_down_move_icon копия 9" width="15" height="9" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAJCAYAAADtj3ZXAAAAi0lEQVQokYXRQQ4BQRCF4Y+ZO7CxEm7hIhYSp+AKTiEZ53ARYs/GypZIS0tkVM+8TXWq//9tavA43mGGC176M8QU5/QY44QDqh61ylziR0m+Yoclmo6CtG8yl/hbnT+2eW7yXOHZIX74+gcoFYRiW44K1thHYiS3CxaYRGJJbheEYsr3zqXM81n+gzeFbiGBHFPswAAAAABJRU5ErkJggg=="/>
+                  </svg>
+                </button>
+              </div>
+              <p class="faq__item-text">
+                Вы сможете пересматривать уроки неограниченное количество раз, повторять их более
+                осознанно. При желании всегда можно продлить доступ: имеется вариант пролонгации и
+                расширенные возможности в рамках подписки.
+              </p>
+            </div>
+            <div class="faq__item">
+              <div class="faq__item-top">
+                <div class="faq__item-question">Как проходят занятия?</div>
+                <button class="faq__item-btn">
+                  <svg class="faq__item-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="9" viewBox="0 0 15 9">
+                    <image id="_4781842_arrow_chevron_direction_down_move_icon_копия_9" data-name="4781842_arrow_chevron_direction_down_move_icon копия 9" width="15" height="9" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAJCAYAAADtj3ZXAAAAi0lEQVQokYXRQQ4BQRCF4Y+ZO7CxEm7hIhYSp+AKTiEZ53ARYs/GypZIS0tkVM+8TXWq//9tavA43mGGC176M8QU5/QY44QDqh61ylziR0m+Yoclmo6CtG8yl/hbnT+2eW7yXOHZIX74+gcoFYRiW44K1thHYiS3CxaYRGJJbheEYsr3zqXM81n+gzeFbiGBHFPswAAAAABJRU5ErkJggg=="/>
+                  </svg>
+                </button>
+              </div>
+              <p class="faq__item-text">
+                Вы сможете пересматривать уроки неограниченное количество раз, повторять их более
+                осознанно. При желании всегда можно продлить доступ: имеется вариант пролонгации и
+                расширенные возможности в рамках подписки.
+              </p>
+            </div>
+            <div class="faq__item">
+              <div class="faq__item-top">
+                <div class="faq__item-question">Сколько понадобится занятий, чтобы увидеть результат?</div>
+                <button class="faq__item-btn">
+                  <svg class="faq__item-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="9" viewBox="0 0 15 9">
+                    <image id="_4781842_arrow_chevron_direction_down_move_icon_копия_9" data-name="4781842_arrow_chevron_direction_down_move_icon копия 9" width="15" height="9" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAJCAYAAADtj3ZXAAAAi0lEQVQokYXRQQ4BQRCF4Y+ZO7CxEm7hIhYSp+AKTiEZ53ARYs/GypZIS0tkVM+8TXWq//9tavA43mGGC176M8QU5/QY44QDqh61ylziR0m+Yoclmo6CtG8yl/hbnT+2eW7yXOHZIX74+gcoFYRiW44K1thHYiS3CxaYRGJJbheEYsr3zqXM81n+gzeFbiGBHFPswAAAAABJRU5ErkJggg=="/>
+                  </svg>
+                </button>
+              </div>
+              <p class="faq__item-text">
+                Вы сможете пересматривать уроки неограниченное количество раз, повторять их более
+                осознанно. При желании всегда можно продлить доступ: имеется вариант пролонгации и
+                расширенные возможности в рамках подписки.
+              </p>
+            </div>
+            <div class="faq__item">
+              <div class="faq__item-top">
+                <div class="faq__item-question">Могу ли я заниматься сразу по нескольким программам одновременно?</div>
+                <button class="faq__item-btn">
+                  <svg class="faq__item-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="9" viewBox="0 0 15 9">
+                    <image id="_4781842_arrow_chevron_direction_down_move_icon_копия_9" data-name="4781842_arrow_chevron_direction_down_move_icon копия 9" width="15" height="9" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAJCAYAAADtj3ZXAAAAi0lEQVQokYXRQQ4BQRCF4Y+ZO7CxEm7hIhYSp+AKTiEZ53ARYs/GypZIS0tkVM+8TXWq//9tavA43mGGC176M8QU5/QY44QDqh61ylziR0m+Yoclmo6CtG8yl/hbnT+2eW7yXOHZIX74+gcoFYRiW44K1thHYiS3CxaYRGJJbheEYsr3zqXM81n+gzeFbiGBHFPswAAAAABJRU5ErkJggg=="/>
+                  </svg>
+                </button>
+              </div>
+              <p class="faq__item-text">
+                Вы сможете пересматривать уроки неограниченное количество раз, повторять их более
+                осознанно. При желании всегда можно продлить доступ: имеется вариант пролонгации и
+                расширенные возможности в рамках подписки.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn-down">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="18" viewBox="0 0 30 18">
+          <image id="_4781842_arrow_chevron_direction_down_move_icon_копия" data-name="4781842_arrow_chevron_direction_down_move_icon копия" width="30" height="18" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAASCAYAAABM8m7ZAAAA3UlEQVRIibXWIQ7CMBTG8T8L2xVQeDS3ADEFd2EnAPwMeBxX4ASAR+CQJCgOQF7yljRLt/WN9VN9r+37iZqOvpcPwBx4Ay/iZgpMgFsC7IE78ATWEdm1GlcxBV7qRgacgDwCmuvsTOuFwAfnQAqcB8ZznZk6vaPAJVBEwn2oWGWixS4C3oSKReI0h8Rb0To8FN6J+uB/8SC0Ce6LB6NtsBU3oV1wKG5GJeMOGGfAtoavtDajoXAbTh/UAjfhboJRAt7YhxeevgntA1f4xqllbUIl1UegT2Z66WG+DPwAkpBA5FPO5mkAAAAASUVORK5CYII="/>
+        </svg>
+      </a>
+    </section>
+
+    <div class="subscribe">
+      <div class="container">
+        <div class="subscribe__inner">
+          <div class="subscribe__left">
+            <h2 class="subscribe__title">подпишитесь на новости</h2>
+            <p class="subscribe__descr">
+              Подпишитесь на нашу информационную рассылку и первыми получайте уведомления
+              о закрытых распродажах и новых программах тренеров платформы 4Me.Fit
+            </p>
+            <form action="#" method="POST" class="subscribe__form">
+              <div class="subscribe__form-item">
+                <input type="email" name="email" required class="subscribe__form-input" placeholder="Введите ваш e-mail">
+              </div>
+              <button class="subscribe__form-btn btn" type="submit">Подписаться на новости</button>
+            </form>
+          </div>
+          <div class="subscribe__right">
+            <img src="img/subscribe/subscribe-img.png" alt="image" class="subscribe__img">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__left">
+            <a href="index.html" class="footer__link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="106" height="36" fill="none"><path d="M80.411 14.358c.194-.89.508-1.655.944-2.292a5.95 5.95 0 011.551-1.572 6.346 6.346 0 011.99-.904 8.847 8.847 0 012.265-.288c1.256 0 2.144.17 2.663.511.52.34.69.921.512 1.742-.076.35-.216.664-.421.943-.205.28-.408.49-.608.629a9.914 9.914 0 00-.957-.223 6.705 6.705 0 00-1.189-.091c-.73 0-1.325.126-1.788.38-.462.253-.761.694-.898 1.323l-.183.838h4.175c.06.192.105.432.136.72.03.288.007.607-.069.957-.132.61-.36 1.052-.682 1.323-.322.27-.703.406-1.144.406H83.78l-1.807 8.304c-.18.053-.46.105-.836.158-.376.052-.76.078-1.15.078-.373 0-.702-.026-.988-.078-.285-.053-.513-.158-.682-.315a1.136 1.136 0 01-.331-.642c-.052-.27-.03-.624.065-1.06l2.36-10.847h-.001zm11.485-3.536a2.993 2.993 0 011.013-1.677 2.785 2.785 0 011.867-.681c.713 0 1.236.227 1.57.68.333.455.428 1.014.284 1.678a2.992 2.992 0 01-1.014 1.676 2.783 2.783 0 01-1.866.681c-.713 0-1.236-.227-1.57-.68-.334-.455-.429-1.014-.284-1.677zm.997 16.242c-.194.035-.48.083-.858.145a7.057 7.057 0 01-1.127.091c-.374 0-.703-.026-.989-.078-.285-.053-.513-.158-.682-.315a1.136 1.136 0 01-.331-.642c-.052-.27-.03-.624.065-1.06l2.32-10.663c.194-.035.48-.083.858-.144a7.055 7.055 0 011.127-.092c.373 0 .703.026.988.079.286.052.513.157.683.314.17.157.28.371.33.642.052.27.03.624-.064 1.06l-2.32 10.663zm8.022-4.349c-.099.455-.029.778.209.97.238.192.612.288 1.121.288.255 0 .522-.022.803-.066a5 5 0 00.75-.17c.111.192.196.406.255.642s.052.52-.02.851c-.144.664-.504 1.206-1.079 1.625-.574.419-1.473.628-2.694.628-1.494 0-2.567-.349-3.221-1.047-.654-.699-.81-1.834-.468-3.406l2.439-11.213c.198-.052.477-.109.838-.17.361-.061.737-.092 1.127-.092.747 0 1.299.136 1.656.406.356.27.44.843.25 1.716l-.365 1.677h3.335c.06.192.105.432.135.72.031.288.008.607-.068.957-.132.61-.36 1.052-.682 1.323a1.72 1.72 0 01-1.144.406h-2.317l-.86 3.955zM43.798 13.965c.696 0 1.357.1 1.984.302.626.2 1.142.502 1.547.904a9.573 9.573 0 011.906-.865c.685-.227 1.478-.34 2.377-.34.645 0 1.258.087 1.84.261a3.67 3.67 0 011.474.825c.402.376.68.874.834 1.494.153.62.133 1.375-.06 2.266l-1.795 8.252c-.182.053-.46.105-.836.158a8.34 8.34 0 01-1.15.078c-.373 0-.703-.026-.988-.078-.286-.053-.514-.158-.683-.315a1.134 1.134 0 01-.331-.642c-.052-.27-.03-.624.065-1.06l1.362-6.262c.114-.524.053-.904-.185-1.14-.237-.236-.602-.353-1.094-.353-.237 0-.504.056-.8.17a2.867 2.867 0 00-.688.354.827.827 0 01-.017.196l-.037.17-1.898 8.724a7.875 7.875 0 01-.861.158c-.376.052-.751.078-1.125.078-.373 0-.702-.026-.988-.078-.285-.053-.513-.158-.682-.315a1.136 1.136 0 01-.332-.642c-.05-.27-.03-.624.066-1.06l1.362-6.262c.114-.524.04-.904-.223-1.14-.263-.236-.615-.353-1.056-.353-.305 0-.579.048-.82.144a7.509 7.509 0 00-.62.275l-2 9.195c-.181.053-.46.105-.836.158a8.34 8.34 0 01-1.15.078c-.373 0-.703-.026-.988-.078-.286-.053-.513-.158-.683-.315a1.136 1.136 0 01-.331-.642c-.051-.27-.03-.624.066-1.06l1.72-7.912c.103-.472.282-.847.538-1.127.256-.28.58-.541.973-.786.668-.419 1.459-.76 2.373-1.022a10.01 10.01 0 012.77-.393zM62.996 27.51c-1.001 0-1.899-.144-2.693-.433-.794-.288-1.447-.72-1.958-1.296-.51-.577-.854-1.301-1.029-2.175-.175-.873-.135-1.895.12-3.065.25-1.153.649-2.144 1.194-2.974.545-.83 1.173-1.51 1.882-2.043a7.479 7.479 0 012.293-1.179 8.17 8.17 0 012.424-.38c.9 0 1.688.14 2.365.42.678.279 1.23.663 1.659 1.152.427.49.716 1.074.865 1.756.149.68.136 1.423-.04 2.226-.128.594-.388 1.048-.779 1.363-.39.314-.884.515-1.48.602l-6.498.97c.062.576.35 1.008.864 1.296.514.288 1.144.433 1.89.433.696 0 1.374-.092 2.033-.276.66-.183 1.21-.397 1.654-.641.234.174.41.419.528.733.118.315.14.646.063.996-.17.786-.654 1.37-1.45 1.755a6.695 6.695 0 01-1.964.602c-.702.105-1.35.158-1.943.158zm1.527-10.296c-.408 0-.775.07-1.102.21-.328.14-.608.318-.842.537a3.028 3.028 0 00-.58.733c-.152.27-.267.546-.345.825l4.512-.733c.025-.35-.085-.699-.332-1.048-.246-.35-.684-.524-1.311-.524zm5.694 7.754a3.351 3.351 0 011.06-1.834c.548-.489 1.204-.733 1.967-.733.764 0 1.313.244 1.648.733.335.49.422 1.1.263 1.834a3.351 3.351 0 01-1.06 1.834c-.548.49-1.204.734-1.968.734-.763 0-1.312-.245-1.647-.734-.335-.489-.422-1.1-.263-1.834z" fill="#fff"/><path fill-rule="evenodd" clip-rule="evenodd" d="M10.895 5.611c-.284-.34-.567-.633-.851-.924-.33.097-.662.292-.993.437l-.898.438c.047.146.898.827 1.087 1.022.379.34.71.73 1.088 1.07.408.421.963 1.078 1.4 1.715C5.756 6.9-2.16 15.226.547 24.115c2.08 6.763 9.217 10.072 15.079 11.288 2.019-6.031 6.24-22.478 7.516-22.77.378-.098.992-.146 1.418-.146.709 0 2.221-.049 2.694.292-1.356 5.287-6.288 20.757-6.854 23.208a13.44 13.44 0 002.647-.146c5.2-5.936 10.825-12.99 8.272-21.651-.756-2.627-2.316-5.352-4.443-7.006-5.342-3.73-9.908-2.76-13.25 2.954-.794-1.553-1.402-2.952-2.731-4.527zm1.469 23.467c-1.37-.195-2.222-1.022-2.694-2.19-1.655-3.94.945-12.066 2.41-14.45l4.397.195c-.993 3.114-4.207 11.288-3.026 14.207.331.827 1.04 1.508 1.938 1.508-.425.584-1.796.924-3.025.73z" fill="#fff"/><path fill-rule="evenodd" clip-rule="evenodd" d="M13.825 7.863C15.01 3.586 20.05 4.605 21.087 0c-1.276.3-3.688-.236-6.038 1.044-2.12 1.153-3.487 3.31-1.224 6.82z" fill="#fff"/></svg>
+            </a>
+            <span class="footer__span">Все права защищены</span>
+            <span class="footer__span">Copyright © 2021 4Me.Fit.</span>
+          </div>
+          <div class="footer__right">
+            <nav class="footer__nav">
+              <ul class="footer__menu">
+                <li class="footer__menu-item"><a href="#" class="footer__menu-link">Войти в личный кабинет</a></li>
+                <li class="footer__menu-item"><a href="#" class="footer__menu-link">Условия представления услуг</a></li>
+                <li class="footer__menu-item"><a href="#" class="footer__menu-link"> Обработка персональных данных</a></li>
+              </ul>
+            </nav>
+            <div class="footer__line line"></div>
+            <span class="footer__span-mobile">Все права защищены</span>
+            <span class="footer__span-mobile">Copyright © 2021 4Me.Fit.</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+  
+  <script src="js/libs/jquery.min.js"></script>
+  <script src="js/libs/jquery.slick.min.js"></script>
+  <script src="js/libs/jquery.validate.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
