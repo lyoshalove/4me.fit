@@ -109,7 +109,7 @@ body {
 .btn {
   color: #fff;
   font-weight: 600;
-  padding: 23px 70px;
+  padding: 20px 17px;
   border-radius: 32px;
   background: #7e58f5;
   transition: .3s;
@@ -387,7 +387,6 @@ h3 span {
 
 .hero__btn {
   flex: 0 1 calc(50% - 15px);
-  padding: 23px 20px;
   max-width: 320px;
   width: 100%;
 }
@@ -469,7 +468,7 @@ h3 span {
 }
 
 .about__btn {
-  padding: 15px 20px;
+  padding: 20px;
 }
 
 .training {
@@ -606,7 +605,7 @@ h3 span {
 }
 
 .action__btn {
-  padding: 20px 45px;
+  padding: 25px 45px;
 }
 
 .action__btn:not(:last-child) {
